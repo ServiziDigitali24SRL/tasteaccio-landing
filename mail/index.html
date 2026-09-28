@@ -1,0 +1,1092 @@
+<!DOCTYPE html>
+<html lang="it"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Le mail di Taste'accio, da rivedere</title>
+<meta property="og:title" content="Le mail di Taste'accio, da rivedere">
+<meta property="og:description" content="Le 48 mail ai canali: agenzie, guide, eventi, B&amp;B. Si leggono e si segnano, una per una.">
+<meta property="og:image" content="https://servizidigitali24srl.github.io/tasteaccio-landing/anteprima-link.jpg">
+<meta property="og:type" content="website">
+<link rel="icon" href="https://servizidigitali24srl.github.io/tasteaccio-landing/favicon.png">
+<style>
+:root{--rame:#985030;--rame-scuro:#6e3a22;--crema:#f4ebc4;--carta:#fbf8f2;--nero:#1c1917;--grigio:#6f6a64;--verde:#1f8f4e;--rosso:#b3261e;--arancio:#c26a12}
+*{box-sizing:border-box}
+body{margin:0;background:var(--carta);color:var(--nero);font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;padding-bottom:84px}
+.pagina{max-width:760px;margin:0 auto;padding:18px 16px}
+h1{font:700 26px/1.2 Georgia,"Times New Roman",serif;margin:6px 0 8px}
+.intro{background:#fff;border:1px solid #eadfcd;border-radius:12px;padding:12px 14px;font-size:15px}
+.intro p{margin:6px 0}
+.versione{font-size:12.5px;color:var(--grigio)}
+.schede{display:flex;gap:8px;overflow-x:auto;padding:14px 0 6px;position:sticky;top:0;background:var(--carta);z-index:5}
+.scheda{flex:none;border:1.5px solid var(--rame);background:#fff;color:var(--rame-scuro);border-radius:999px;padding:8px 14px;font-weight:600;font-size:14px;font-family:inherit;cursor:pointer}
+.scheda.attiva{background:var(--rame);color:#fff}
+.scheda .c{font-weight:400;opacity:.85}
+.info{font-size:14.5px;color:#3b3632;margin:8px 0 4px}
+.info p{margin:4px 0}
+code{font-size:13px;overflow-wrap:anywhere}
+.pista h3{font:700 19px/1.3 Georgia,serif;color:var(--rame-scuro);margin:26px 0 10px;border-bottom:2px solid var(--crema);padding-bottom:6px}
+.mail{background:#fff;border:1px solid #eadfcd;border-left:5px solid #eadfcd;border-radius:12px;padding:14px 16px;margin:0 0 16px}
+.mail.ok{border-left-color:var(--verde)}
+.mail.no{border-left-color:var(--arancio)}
+.quando{font-size:12.5px;letter-spacing:.4px;text-transform:uppercase;color:var(--grigio);font-weight:700;margin-bottom:8px}
+.busta{background:var(--carta);border-radius:8px;padding:8px 12px;margin-bottom:10px}
+.riga{display:flex;gap:10px;font-size:15px}
+.riga span{flex:none;width:84px;color:var(--grigio);font-size:13px;padding-top:2px}
+.riga i{color:#4a4541}
+.testo p{margin:0 0 10px}
+.testo a{color:var(--rame);overflow-wrap:anywhere}
+.oggi{font-size:12px;color:var(--grigio);white-space:nowrap}
+.firma{color:#3b3632;font-size:15px}
+.rev{border-top:1px dashed #e3d7c3;margin-top:10px;padding-top:10px}
+.scelta{display:flex;gap:8px}
+.scelta button,.apri,.ripristina{border:1.5px solid var(--rame);background:#fff;color:var(--rame-scuro);border-radius:10px;padding:9px 14px;font-weight:600;font-size:14.5px;font-family:inherit;cursor:pointer}
+.mail.ok .si{background:var(--verde);border-color:var(--verde);color:#fff}
+.mail.no .no{background:var(--arancio);border-color:var(--arancio);color:#fff}
+.cambia label{display:block;font-size:14px;color:#3b3632;margin:12px 0 8px}
+textarea{width:100%;border:1px solid #d9ccb6;border-radius:8px;padding:10px;font-size:15px;line-height:1.5;font-family:inherit;background:#fffdf8;margin-top:4px}
+.correggi{margin-top:10px}
+.modifiche{background:var(--carta);border-radius:8px;padding:10px 12px;margin:8px 0;font-size:15px;white-space:pre-wrap;overflow-wrap:anywhere}
+.modifiche:empty{display:none}
+.modifiche del{color:var(--rosso);text-decoration:line-through;background:#fbe4e2}
+.modifiche ins{color:var(--verde);text-decoration:none;background:#dff3e6;border-bottom:1.5px solid var(--verde)}
+.modifiche b{display:block;font-size:12.5px;color:var(--grigio);text-transform:uppercase;letter-spacing:.4px;margin-bottom:4px;white-space:normal}
+.avviso{background:#fff4e0;border-radius:8px;padding:8px 10px;font-size:14px;margin:8px 0 0}
+.barra{position:fixed;left:0;right:0;bottom:0;background:#fff;border-top:1px solid #e3d7c3;box-shadow:0 -4px 16px rgba(0,0,0,.06);z-index:10}
+.barra div{max-width:760px;margin:0 auto;padding:10px 16px;display:flex;align-items:center;gap:12px;justify-content:space-between}
+.barra span{font-size:14px;color:#3b3632}
+.verde{background:var(--verde);color:#fff;border:0;border-radius:10px;padding:11px 16px;font-weight:700;font-size:15px;font-family:inherit;cursor:pointer;text-decoration:none;display:inline-block;text-align:center}
+.modale{position:fixed;inset:0;background:rgba(18,12,8,.6);display:flex;align-items:center;justify-content:center;padding:14px;z-index:20}
+.modale[hidden]{display:none}
+.finestra{background:#fff;border-radius:14px;width:min(620px,100%);max-height:92vh;overflow:auto;padding:18px 18px 16px;position:relative}
+.finestra h3{margin:0 0 10px;font:700 21px Georgia,serif}
+.finestra input{width:100%;border:1px solid #d9ccb6;border-radius:8px;padding:10px;font-size:15px;font-family:inherit;margin:4px 0 10px}
+.azioni{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+.azioni .grigio{background:#fff;color:var(--rame-scuro);border:1.5px solid var(--rame)}
+.nota{font-size:13px;color:var(--grigio);margin:8px 0 0}
+.chiudi{position:absolute;top:8px;right:8px;width:36px;height:36px;border-radius:50%;border:0;background:#f1ebe2;font-size:20px;cursor:pointer}
+</style></head><body>
+<div class="pagina">
+ <h1>Le mail di Taste'accio, da rivedere</h1>
+ <div class="intro">
+  <p>Qui ci sono le mail a freddo che Alessia manda ad agenzie, guide, organizzatori di eventi e B&amp;B: si leggono
+  come arrivano, con oggetto e anteprima.</p>
+  <p>Per ogni mail: <b>Va bene</b> oppure <b>Da cambiare</b>. Nel secondo caso può scrivere cosa non va, o correggere
+  direttamente il testo: le correzioni si vedono in rosso (tolto) e in verde (aggiunto).</p>
+  <p>Quando ha finito, <b>Manda la revisione</b>: parte un messaggio WhatsApp, o una mail, con tutto quello che ha
+  segnato. Fino ad allora resta salvato in questo browser, anche se chiude la pagina.</p>
+  <p class="versione">Versione del testo: 28/09/2026 13:32 · 1501b5</p>
+ </div>
+ <nav class="schede"><button class="scheda" data-s="agenzie">Agenzie e tour operator <span class="c" data-conta="agenzie"></span></button><button class="scheda" data-s="guide">Guide del Lazio <span class="c" data-conta="guide"></span></button><button class="scheda" data-s="eventi">Eventi, congressi, MICE <span class="c" data-conta="eventi"></span></button><button class="scheda" data-s="host">B&amp;B e guest house <span class="c" data-conta="host"></span></button></nav>
+ <div class="settore" data-s="agenzie" hidden>
+ <div class="info"><p><b>A chi va:</b> Agenzie e tour operator · si dà del voi.</p>
+ <p><b>Tre piste, quattro mail ciascuna:</b> ogni destinatario riceve una sola pista, quattro mail in nove giorni.</p>
+ <p><b>Il link delle mail</b> porta a <code>https://tasteaccio.it/agenzie</code> · <a href="https://servizidigitali24srl.github.io/tasteaccio-landing/agenzie/" target="_blank" rel="noopener">apri l'anteprima della pagina</a></p></div>
+ <section class="pista"><h3>Pista A · la location e i clienti</h3><article class="mail" id="agenzie-A0" data-id="agenzie-A0">
+ <div class="quando">Mail 1 · il primo giorno · la proposta</div>
+ <div class="busta"><div class="riga"><span>Oggetto</span><b>gruppi a Roma</b></div>
+ <div class="riga"><span>Anteprima</span><i>una grotta di duemila anni, a Testaccio</i></div></div>
+ <div class="testo"><p>Buongiorno,</p><p>Vi propongo di diventare partner di Taste&#x27;accio, la prima grotta di affinamento urbano d&#x27;Europa, e di portarci i vostri gruppi.</p><p>Siamo alla base del Monte dei Cocci: i vostri clienti si siedono fra le forme in stagionatura. Sedute ci stanno fino a trentadue persone, e con i gruppi grandi facciamo due turni.</p><p>A Roma i monumenti si visitano; da noi si mangia dentro un monumento.</p><p>Valutate la tappa per i vostri tour: <a href="https://servizidigitali24srl.github.io/tasteaccio-landing/agenzie/" target="_blank" rel="noopener">https://tasteaccio.it/agenzie</a> <span class="oggi">oggi apre l'anteprima della pagina</span></p><p class="firma">Alessia · 389 583 4072<br>Taste&#x27;accio · Via di Monte Testaccio 91/93, 00153 Roma</p></div>
+ <div class="rev">
+  <div class="scelta"><button class="si">Va bene</button><button class="no">Da cambiare</button></div>
+  <p class="avviso" hidden>Questa mail è cambiata dopo la sua revisione: la rilegga.</p>
+  <div class="cambia" hidden>
+   <label>Cosa non va?<textarea class="commento" rows="3" placeholder="Scriva qui cosa cambierebbe"></textarea></label>
+   <button class="apri">Correggi direttamente il testo</button>
+   <div class="correggi" hidden>
+    <textarea class="nuovo" rows="12" spellcheck="true"></textarea>
+    <div class="modifiche"></div>
+    <button class="ripristina">Torna al testo di partenza</button>
+   </div>
+  </div>
+ </div>
+</article><article class="mail" id="agenzie-A1" data-id="agenzie-A1">
+ <div class="quando">Mail 2 · il giorno dopo · l&#x27;approfondimento</div>
+ <div class="busta"><div class="riga"><span>Oggetto</span><b>i produttori</b></div>
+ <div class="riga"><span>Anteprima</span><i>i paesi e i mestieri dietro ogni assaggio</i></div></div>
+ <div class="testo"><p>Buongiorno,</p><p>Vi propongo una tappa in cui si scopre chi ha fatto quello che si assaggia e da quale paese del Lazio arriva: lo raccontiamo a tavola, in italiano o in inglese.</p><p>Taste&#x27;accio è la prima grotta di affinamento urbano d&#x27;Europa, alla base del Monte dei Cocci: i vostri clienti mangiano dentro un monumento.</p><p>Guardate se fa per i vostri gruppi: <a href="https://servizidigitali24srl.github.io/tasteaccio-landing/agenzie/" target="_blank" rel="noopener">https://tasteaccio.it/agenzie</a> <span class="oggi">oggi apre l'anteprima della pagina</span></p><p class="firma">Alessia · 389 583 4072<br>Taste&#x27;accio · Via di Monte Testaccio 91/93, 00153 Roma</p></div>
+ <div class="rev">
+  <div class="scelta"><button class="si">Va bene</button><button class="no">Da cambiare</button></div>
+  <p class="avviso" hidden>Questa mail è cambiata dopo la sua revisione: la rilegga.</p>
+  <div class="cambia" hidden>
+   <label>Cosa non va?<textarea class="commento" rows="3" placeholder="Scriva qui cosa cambierebbe"></textarea></label>
+   <button class="apri">Correggi direttamente il testo</button>
+   <div class="correggi" hidden>
+    <textarea class="nuovo" rows="12" spellcheck="true"></textarea>
+    <div class="modifiche"></div>
+    <button class="ripristina">Torna al testo di partenza</button>
+   </div>
+  </div>
+ </div>
+</article><article class="mail" id="agenzie-A4" data-id="agenzie-A4">
+ <div class="quando">Mail 3 · dopo 4 giorni · l&#x27;invito</div>
+ <div class="busta"><div class="riga"><span>Oggetto</span><b>fam trip</b></div>
+ <div class="riga"><span>Anteprima</span><i>la degustazione in grotta, prima dei vostri gruppi</i></div></div>
+ <div class="testo"><p>Buongiorno,</p><p>Vi invito a un fam trip qui in grotta, su appuntamento: vi sedete dove si siederebbero i vostri gruppi, assaggiate quello che assaggerebbero loro, e la degustazione la offriamo noi.</p><p>Taste&#x27;accio è la prima grotta di affinamento urbano d&#x27;Europa, alla base del Monte dei Cocci: i vostri clienti mangiano dentro un monumento.</p><p>Fissate il giorno da qui: <a href="https://servizidigitali24srl.github.io/tasteaccio-landing/agenzie/" target="_blank" rel="noopener">https://tasteaccio.it/agenzie</a> <span class="oggi">oggi apre l'anteprima della pagina</span></p><p class="firma">Alessia · 389 583 4072<br>Taste&#x27;accio · Via di Monte Testaccio 91/93, 00153 Roma</p></div>
+ <div class="rev">
+  <div class="scelta"><button class="si">Va bene</button><button class="no">Da cambiare</button></div>
+  <p class="avviso" hidden>Questa mail è cambiata dopo la sua revisione: la rilegga.</p>
+  <div class="cambia" hidden>
+   <label>Cosa non va?<textarea class="commento" rows="3" placeholder="Scriva qui cosa cambierebbe"></textarea></label>
+   <button class="apri">Correggi direttamente il testo</button>
+   <div class="correggi" hidden>
+    <textarea class="nuovo" rows="12" spellcheck="true"></textarea>
+    <div class="modifiche"></div>
+    <button class="ripristina">Torna al testo di partenza</button>
+   </div>
+  </div>
+ </div>
+</article><article class="mail" id="agenzie-A9" data-id="agenzie-A9">
+ <div class="quando">Mail 4 · dopo 9 giorni · il saluto</div>
+ <div class="busta"><div class="riga"><span>Oggetto</span><b>resta valida</b></div>
+ <div class="riga"><span>Anteprima</span><i>anche fra qualche mese, quando avrete un gruppo a Roma</i></div></div>
+ <div class="testo"><p>Buongiorno,</p><p>È l&#x27;ultima volta che vi scrivo: la proposta di diventare nostri partner resta valida anche fra qualche mese, quando avrete un gruppo a Roma.</p><p>Taste&#x27;accio è la prima grotta di affinamento urbano d&#x27;Europa, alla base del Monte dei Cocci: i vostri clienti mangiano dentro un monumento.</p><p>Trovate tutto qui: <a href="https://servizidigitali24srl.github.io/tasteaccio-landing/agenzie/" target="_blank" rel="noopener">https://tasteaccio.it/agenzie</a> <span class="oggi">oggi apre l'anteprima della pagina</span></p><p class="firma">Alessia · 389 583 4072<br>Taste&#x27;accio · Via di Monte Testaccio 91/93, 00153 Roma</p></div>
+ <div class="rev">
+  <div class="scelta"><button class="si">Va bene</button><button class="no">Da cambiare</button></div>
+  <p class="avviso" hidden>Questa mail è cambiata dopo la sua revisione: la rilegga.</p>
+  <div class="cambia" hidden>
+   <label>Cosa non va?<textarea class="commento" rows="3" placeholder="Scriva qui cosa cambierebbe"></textarea></label>
+   <button class="apri">Correggi direttamente il testo</button>
+   <div class="correggi" hidden>
+    <textarea class="nuovo" rows="12" spellcheck="true"></textarea>
+    <div class="modifiche"></div>
+    <button class="ripristina">Torna al testo di partenza</button>
+   </div>
+  </div>
+ </div>
+</article></section><section class="pista"><h3>Pista B · il colle</h3><article class="mail" id="agenzie-B0" data-id="agenzie-B0">
+ <div class="quando">Mail 1 · il primo giorno · la proposta</div>
+ <div class="busta"><div class="riga"><span>Oggetto</span><b>Monte dei Cocci</b></div>
+ <div class="riga"><span>Anteprima</span><i>cosa c&#x27;è sotto il colle di Testaccio</i></div></div>
+ <div class="testo"><p>Buongiorno,</p><p>Vi propongo di diventare partner di Taste&#x27;accio e di far entrare i vostri gruppi nel Monte dei Cocci, il colle fatto di frammenti di anfore romane.</p><p>Alla sua base c&#x27;è la prima grotta di affinamento urbano d&#x27;Europa: i vostri clienti si siedono fra le forme e mangiano dentro un monumento. Sedute ci stanno fino a trentadue persone, e con i gruppi grandi facciamo due turni.</p><p>Valutate la tappa per i vostri tour: <a href="https://servizidigitali24srl.github.io/tasteaccio-landing/agenzie/" target="_blank" rel="noopener">https://tasteaccio.it/agenzie</a> <span class="oggi">oggi apre l'anteprima della pagina</span></p><p class="firma">Alessia · 389 583 4072<br>Taste&#x27;accio · Via di Monte Testaccio 91/93, 00153 Roma</p></div>
+ <div class="rev">
+  <div class="scelta"><button class="si">Va bene</button><button class="no">Da cambiare</button></div>
+  <p class="avviso" hidden>Questa mail è cambiata dopo la sua revisione: la rilegga.</p>
+  <div class="cambia" hidden>
+   <label>Cosa non va?<textarea class="commento" rows="3" placeholder="Scriva qui cosa cambierebbe"></textarea></label>
+   <button class="apri">Correggi direttamente il testo</button>
+   <div class="correggi" hidden>
+    <textarea class="nuovo" rows="12" spellcheck="true"></textarea>
+    <div class="modifiche"></div>
+    <button class="ripristina">Torna al testo di partenza</button>
+   </div>
+  </div>
+ </div>
+</article><article class="mail" id="agenzie-B1" data-id="agenzie-B1">
+ <div class="quando">Mail 2 · il giorno dopo · l&#x27;approfondimento</div>
+ <div class="busta"><div class="riga"><span>Oggetto</span><b>perché lì sotto</b></div>
+ <div class="riga"><span>Anteprima</span><i>le grotte del colle, le muffe e i formaggi che maturano</i></div></div>
+ <div class="testo"><p>Buongiorno,</p><p>Vi propongo una tappa che ha una storia, e la raccontiamo a tavola: le grotte scavate nel colle sono state per secoli magazzini e cantine, e nella nostra le muffe spontanee delle pareti lavorano le croste dei formaggi.</p><p>Taste&#x27;accio è la prima grotta di affinamento urbano d&#x27;Europa, alla base del Monte dei Cocci: i vostri clienti mangiano dentro un monumento.</p><p>Guardate se fa per i vostri gruppi: <a href="https://servizidigitali24srl.github.io/tasteaccio-landing/agenzie/" target="_blank" rel="noopener">https://tasteaccio.it/agenzie</a> <span class="oggi">oggi apre l'anteprima della pagina</span></p><p class="firma">Alessia · 389 583 4072<br>Taste&#x27;accio · Via di Monte Testaccio 91/93, 00153 Roma</p></div>
+ <div class="rev">
+  <div class="scelta"><button class="si">Va bene</button><button class="no">Da cambiare</button></div>
+  <p class="avviso" hidden>Questa mail è cambiata dopo la sua revisione: la rilegga.</p>
+  <div class="cambia" hidden>
+   <label>Cosa non va?<textarea class="commento" rows="3" placeholder="Scriva qui cosa cambierebbe"></textarea></label>
+   <button class="apri">Correggi direttamente il testo</button>
+   <div class="correggi" hidden>
+    <textarea class="nuovo" rows="12" spellcheck="true"></textarea>
+    <div class="modifiche"></div>
+    <button class="ripristina">Torna al testo di partenza</button>
+   </div>
+  </div>
+ </div>
+</article><article class="mail" id="agenzie-B4" data-id="agenzie-B4">
+ <div class="quando">Mail 3 · dopo 4 giorni · l&#x27;invito</div>
+ <div class="busta"><div class="riga"><span>Oggetto</span><b>prima dei gruppi</b></div>
+ <div class="riga"><span>Anteprima</span><i>un fam trip in grotta, la degustazione la offriamo noi</i></div></div>
+ <div class="testo"><p>Buongiorno,</p><p>Vi invito a un fam trip prima di inserirci nei vostri programmi: su appuntamento, entrate in grotta, vi sedete fra le forme e vedete cosa troverebbero i vostri gruppi. La degustazione la offriamo noi.</p><p>Taste&#x27;accio è la prima grotta di affinamento urbano d&#x27;Europa, alla base del Monte dei Cocci: i vostri clienti mangiano dentro un monumento.</p><p>Fissate il giorno da qui: <a href="https://servizidigitali24srl.github.io/tasteaccio-landing/agenzie/" target="_blank" rel="noopener">https://tasteaccio.it/agenzie</a> <span class="oggi">oggi apre l'anteprima della pagina</span></p><p class="firma">Alessia · 389 583 4072<br>Taste&#x27;accio · Via di Monte Testaccio 91/93, 00153 Roma</p></div>
+ <div class="rev">
+  <div class="scelta"><button class="si">Va bene</button><button class="no">Da cambiare</button></div>
+  <p class="avviso" hidden>Questa mail è cambiata dopo la sua revisione: la rilegga.</p>
+  <div class="cambia" hidden>
+   <label>Cosa non va?<textarea class="commento" rows="3" placeholder="Scriva qui cosa cambierebbe"></textarea></label>
+   <button class="apri">Correggi direttamente il testo</button>
+   <div class="correggi" hidden>
+    <textarea class="nuovo" rows="12" spellcheck="true"></textarea>
+    <div class="modifiche"></div>
+    <button class="ripristina">Torna al testo di partenza</button>
+   </div>
+  </div>
+ </div>
+</article><article class="mail" id="agenzie-B9" data-id="agenzie-B9">
+ <div class="quando">Mail 4 · dopo 9 giorni · il saluto</div>
+ <div class="busta"><div class="riga"><span>Oggetto</span><b>quando vi servirà</b></div>
+ <div class="riga"><span>Anteprima</span><i>per il vostro prossimo gruppo a Roma</i></div></div>
+ <div class="testo"><p>Buongiorno,</p><p>Non vi scrivo più, ma la proposta di diventare nostri partner resta valida: quando avrete un gruppo a Roma, la tappa dentro il colle è pronta.</p><p>Taste&#x27;accio è la prima grotta di affinamento urbano d&#x27;Europa, alla base del Monte dei Cocci: i vostri clienti mangiano dentro un monumento.</p><p>Trovate tutto qui: <a href="https://servizidigitali24srl.github.io/tasteaccio-landing/agenzie/" target="_blank" rel="noopener">https://tasteaccio.it/agenzie</a> <span class="oggi">oggi apre l'anteprima della pagina</span></p><p class="firma">Alessia · 389 583 4072<br>Taste&#x27;accio · Via di Monte Testaccio 91/93, 00153 Roma</p></div>
+ <div class="rev">
+  <div class="scelta"><button class="si">Va bene</button><button class="no">Da cambiare</button></div>
+  <p class="avviso" hidden>Questa mail è cambiata dopo la sua revisione: la rilegga.</p>
+  <div class="cambia" hidden>
+   <label>Cosa non va?<textarea class="commento" rows="3" placeholder="Scriva qui cosa cambierebbe"></textarea></label>
+   <button class="apri">Correggi direttamente il testo</button>
+   <div class="correggi" hidden>
+    <textarea class="nuovo" rows="12" spellcheck="true"></textarea>
+    <div class="modifiche"></div>
+    <button class="ripristina">Torna al testo di partenza</button>
+   </div>
+  </div>
+ </div>
+</article></section><section class="pista"><h3>Pista C · Roma consuma, il Lazio produce</h3><article class="mail" id="agenzie-C0" data-id="agenzie-C0">
+ <div class="quando">Mail 1 · il primo giorno · la proposta</div>
+ <div class="busta"><div class="riga"><span>Oggetto</span><b>il Lazio</b></div>
+ <div class="riga"><span>Anteprima</span><i>i paesi e i produttori, dentro un programma su Roma</i></div></div>
+ <div class="testo"><p>Buongiorno,</p><p>Vi propongo di diventare nostri partner e di portare nei vostri programmi su Roma i piccoli produttori del Lazio, paese per paese.</p><p>Taste&#x27;accio è la prima grotta di affinamento urbano d&#x27;Europa, alla base del Monte dei Cocci. Sedute ci stanno fino a trentadue persone, e con i gruppi grandi facciamo due turni.</p><p>A Roma i monumenti si visitano; da noi si mangia dentro un monumento.</p><p>Valutate la tappa per i vostri gruppi: <a href="https://servizidigitali24srl.github.io/tasteaccio-landing/agenzie/" target="_blank" rel="noopener">https://tasteaccio.it/agenzie</a> <span class="oggi">oggi apre l'anteprima della pagina</span></p><p class="firma">Alessia · 389 583 4072<br>Taste&#x27;accio · Via di Monte Testaccio 91/93, 00153 Roma</p></div>
+ <div class="rev">
+  <div class="scelta"><button class="si">Va bene</button><button class="no">Da cambiare</button></div>
+  <p class="avviso" hidden>Questa mail è cambiata dopo la sua revisione: la rilegga.</p>
+  <div class="cambia" hidden>
+   <label>Cosa non va?<textarea class="commento" rows="3" placeholder="Scriva qui cosa cambierebbe"></textarea></label>
+   <button class="apri">Correggi direttamente il testo</button>
+   <div class="correggi" hidden>
+    <textarea class="nuovo" rows="12" spellcheck="true"></textarea>
+    <div class="modifiche"></div>
+    <button class="ripristina">Torna al testo di partenza</button>
+   </div>
+  </div>
+ </div>
+</article><article class="mail" id="agenzie-C1" data-id="agenzie-C1">
+ <div class="quando">Mail 2 · il giorno dopo · l&#x27;approfondimento</div>
+ <div class="busta"><div class="riga"><span>Oggetto</span><b>chi c&#x27;è dietro</b></div>
+ <div class="riga"><span>Anteprima</span><i>paesi, mestieri e persone di ogni assaggio</i></div></div>
+ <div class="testo"><p>Buongiorno,</p><p>Vi propongo una tappa in cui dietro ogni assaggio c&#x27;è chi l&#x27;ha fatto, il casaro, il norcino o il vignaiolo, e il paese del Lazio da cui arriva.</p><p>Taste&#x27;accio è la prima grotta di affinamento urbano d&#x27;Europa, alla base del Monte dei Cocci: i vostri clienti mangiano dentro un monumento.</p><p>Guardate se fa per i vostri gruppi: <a href="https://servizidigitali24srl.github.io/tasteaccio-landing/agenzie/" target="_blank" rel="noopener">https://tasteaccio.it/agenzie</a> <span class="oggi">oggi apre l'anteprima della pagina</span></p><p class="firma">Alessia · 389 583 4072<br>Taste&#x27;accio · Via di Monte Testaccio 91/93, 00153 Roma</p></div>
+ <div class="rev">
+  <div class="scelta"><button class="si">Va bene</button><button class="no">Da cambiare</button></div>
+  <p class="avviso" hidden>Questa mail è cambiata dopo la sua revisione: la rilegga.</p>
+  <div class="cambia" hidden>
+   <label>Cosa non va?<textarea class="commento" rows="3" placeholder="Scriva qui cosa cambierebbe"></textarea></label>
+   <button class="apri">Correggi direttamente il testo</button>
+   <div class="correggi" hidden>
+    <textarea class="nuovo" rows="12" spellcheck="true"></textarea>
+    <div class="modifiche"></div>
+    <button class="ripristina">Torna al testo di partenza</button>
+   </div>
+  </div>
+ </div>
+</article><article class="mail" id="agenzie-C4" data-id="agenzie-C4">
+ <div class="quando">Mail 3 · dopo 4 giorni · l&#x27;invito</div>
+ <div class="busta"><div class="riga"><span>Oggetto</span><b>provate la grotta</b></div>
+ <div class="riga"><span>Anteprima</span><i>su appuntamento, la degustazione la offriamo noi</i></div></div>
+ <div class="testo"><p>Buongiorno,</p><p>Vi invito a provare l&#x27;experience prima di proporla: un fam trip in grotta, su appuntamento, con la degustazione offerta da noi. La vivete come la vivrebbe il vostro gruppo.</p><p>Taste&#x27;accio è la prima grotta di affinamento urbano d&#x27;Europa, alla base del Monte dei Cocci: i vostri clienti mangiano dentro un monumento.</p><p>Fissate il giorno da qui: <a href="https://servizidigitali24srl.github.io/tasteaccio-landing/agenzie/" target="_blank" rel="noopener">https://tasteaccio.it/agenzie</a> <span class="oggi">oggi apre l'anteprima della pagina</span></p><p class="firma">Alessia · 389 583 4072<br>Taste&#x27;accio · Via di Monte Testaccio 91/93, 00153 Roma</p></div>
+ <div class="rev">
+  <div class="scelta"><button class="si">Va bene</button><button class="no">Da cambiare</button></div>
+  <p class="avviso" hidden>Questa mail è cambiata dopo la sua revisione: la rilegga.</p>
+  <div class="cambia" hidden>
+   <label>Cosa non va?<textarea class="commento" rows="3" placeholder="Scriva qui cosa cambierebbe"></textarea></label>
+   <button class="apri">Correggi direttamente il testo</button>
+   <div class="correggi" hidden>
+    <textarea class="nuovo" rows="12" spellcheck="true"></textarea>
+    <div class="modifiche"></div>
+    <button class="ripristina">Torna al testo di partenza</button>
+   </div>
+  </div>
+ </div>
+</article><article class="mail" id="agenzie-C9" data-id="agenzie-C9">
+ <div class="quando">Mail 4 · dopo 9 giorni · il saluto</div>
+ <div class="busta"><div class="riga"><span>Oggetto</span><b>resta la tappa</b></div>
+ <div class="riga"><span>Anteprima</span><i>anche fra qualche mese, per un gruppo a Roma</i></div></div>
+ <div class="testo"><p>Buongiorno,</p><p>Questa è l&#x27;ultima mail che vi mando: la proposta di diventare nostri partner resta valida per il prossimo programma su Roma in cui vorrete mettere il Lazio.</p><p>Taste&#x27;accio è la prima grotta di affinamento urbano d&#x27;Europa, alla base del Monte dei Cocci: i vostri clienti mangiano dentro un monumento.</p><p>Trovate tutto qui: <a href="https://servizidigitali24srl.github.io/tasteaccio-landing/agenzie/" target="_blank" rel="noopener">https://tasteaccio.it/agenzie</a> <span class="oggi">oggi apre l'anteprima della pagina</span></p><p class="firma">Alessia · 389 583 4072<br>Taste&#x27;accio · Via di Monte Testaccio 91/93, 00153 Roma</p></div>
+ <div class="rev">
+  <div class="scelta"><button class="si">Va bene</button><button class="no">Da cambiare</button></div>
+  <p class="avviso" hidden>Questa mail è cambiata dopo la sua revisione: la rilegga.</p>
+  <div class="cambia" hidden>
+   <label>Cosa non va?<textarea class="commento" rows="3" placeholder="Scriva qui cosa cambierebbe"></textarea></label>
+   <button class="apri">Correggi direttamente il testo</button>
+   <div class="correggi" hidden>
+    <textarea class="nuovo" rows="12" spellcheck="true"></textarea>
+    <div class="modifiche"></div>
+    <button class="ripristina">Torna al testo di partenza</button>
+   </div>
+  </div>
+ </div>
+</article></section>
+</div><div class="settore" data-s="guide" hidden>
+ <div class="info"><p><b>A chi va:</b> Guide del Lazio · si dà del Lei.</p>
+ <p><b>Tre piste, quattro mail ciascuna:</b> ogni destinatario riceve una sola pista, quattro mail in nove giorni.</p>
+ <p><b>Il link delle mail</b> porta a <code>https://tasteaccio.it/guide</code> · <a href="https://servizidigitali24srl.github.io/tasteaccio-landing/guide/" target="_blank" rel="noopener">apri l'anteprima della pagina</a></p></div>
+ <section class="pista"><h3>Pista A · l&#x27;experience su Airbnb o Viator</h3><article class="mail" id="guide-A0" data-id="guide-A0">
+ <div class="quando">Mail 1 · il primo giorno · la proposta</div>
+ <div class="busta"><div class="riga"><span>Oggetto</span><b>tappa a Testaccio</b></div>
+ <div class="riga"><span>Anteprima</span><i>a pochi passi dalla Piramide e dal Cimitero acattolico</i></div></div>
+ <div class="testo"><p>Buongiorno,</p><p>Se organizza un&#x27;experience su Airbnb o Viator, un food tour o una visita guidata, le propongo Taste&#x27;accio come tappa: siamo alla base del Monte dei Cocci, vicino alla Piramide e al Cimitero acattolico.</p><p>Siamo la prima grotta di affinamento urbano d&#x27;Europa: il gruppo mangia dentro un monumento. Sedute ci stanno fino a trentadue persone.</p><p>La tappa a tavola è nostra, il tour resta suo.</p><p>Veda se la grotta fa per la sua experience: <a href="https://servizidigitali24srl.github.io/tasteaccio-landing/guide/" target="_blank" rel="noopener">https://tasteaccio.it/guide</a> <span class="oggi">oggi apre l'anteprima della pagina</span></p><p class="firma">Alessia · 389 583 4072<br>Taste&#x27;accio · Via di Monte Testaccio 91/93, 00153 Roma</p></div>
+ <div class="rev">
+  <div class="scelta"><button class="si">Va bene</button><button class="no">Da cambiare</button></div>
+  <p class="avviso" hidden>Questa mail è cambiata dopo la sua revisione: la rilegga.</p>
+  <div class="cambia" hidden>
+   <label>Cosa non va?<textarea class="commento" rows="3" placeholder="Scriva qui cosa cambierebbe"></textarea></label>
+   <button class="apri">Correggi direttamente il testo</button>
+   <div class="correggi" hidden>
+    <textarea class="nuovo" rows="12" spellcheck="true"></textarea>
+    <div class="modifiche"></div>
+    <button class="ripristina">Torna al testo di partenza</button>
+   </div>
+  </div>
+ </div>
+</article><article class="mail" id="guide-A1" data-id="guide-A1">
+ <div class="quando">Mail 2 · il giorno dopo · l&#x27;approfondimento</div>
+ <div class="busta"><div class="riga"><span>Oggetto</span><b>intorno a noi</b></div>
+ <div class="riga"><span>Anteprima</span><i>Piramide, Porta San Paolo, Mercato: tutto a piedi</i></div></div>
+ <div class="testo"><p>Buongiorno,</p><p>Le propongo la nostra grotta per il suo giro a piedi: a poche centinaia di metri ci sono la Piramide, Porta San Paolo, il Cimitero acattolico, il Mercato di Testaccio e l&#x27;ex Mattatoio.</p><p>Taste&#x27;accio è la prima grotta di affinamento urbano d&#x27;Europa: la tappa per la sua experience, in cui il gruppo si siede a mangiare dentro un monumento.</p><p>Guardi dove ci incastriamo: <a href="https://servizidigitali24srl.github.io/tasteaccio-landing/guide/" target="_blank" rel="noopener">https://tasteaccio.it/guide</a> <span class="oggi">oggi apre l'anteprima della pagina</span></p><p class="firma">Alessia · 389 583 4072<br>Taste&#x27;accio · Via di Monte Testaccio 91/93, 00153 Roma</p></div>
+ <div class="rev">
+  <div class="scelta"><button class="si">Va bene</button><button class="no">Da cambiare</button></div>
+  <p class="avviso" hidden>Questa mail è cambiata dopo la sua revisione: la rilegga.</p>
+  <div class="cambia" hidden>
+   <label>Cosa non va?<textarea class="commento" rows="3" placeholder="Scriva qui cosa cambierebbe"></textarea></label>
+   <button class="apri">Correggi direttamente il testo</button>
+   <div class="correggi" hidden>
+    <textarea class="nuovo" rows="12" spellcheck="true"></textarea>
+    <div class="modifiche"></div>
+    <button class="ripristina">Torna al testo di partenza</button>
+   </div>
+  </div>
+ </div>
+</article><article class="mail" id="guide-A4" data-id="guide-A4">
+ <div class="quando">Mail 3 · dopo 4 giorni · l&#x27;invito</div>
+ <div class="busta"><div class="riga"><span>Oggetto</span><b>visiti la grotta</b></div>
+ <div class="riga"><span>Anteprima</span><i>scende, si guarda intorno e capisce se fa per lei</i></div></div>
+ <div class="testo"><p>Buongiorno,</p><p>La invito a vedere la grotta prima di metterla nel suo giro: su appuntamento, scende, si guarda intorno e capisce subito se fa al caso suo.</p><p>Taste&#x27;accio è la prima grotta di affinamento urbano d&#x27;Europa: la tappa per la sua experience, in cui il gruppo si siede a mangiare dentro un monumento.</p><p>Fissi la visita da qui: <a href="https://servizidigitali24srl.github.io/tasteaccio-landing/guide/" target="_blank" rel="noopener">https://tasteaccio.it/guide</a> <span class="oggi">oggi apre l'anteprima della pagina</span></p><p class="firma">Alessia · 389 583 4072<br>Taste&#x27;accio · Via di Monte Testaccio 91/93, 00153 Roma</p></div>
+ <div class="rev">
+  <div class="scelta"><button class="si">Va bene</button><button class="no">Da cambiare</button></div>
+  <p class="avviso" hidden>Questa mail è cambiata dopo la sua revisione: la rilegga.</p>
+  <div class="cambia" hidden>
+   <label>Cosa non va?<textarea class="commento" rows="3" placeholder="Scriva qui cosa cambierebbe"></textarea></label>
+   <button class="apri">Correggi direttamente il testo</button>
+   <div class="correggi" hidden>
+    <textarea class="nuovo" rows="12" spellcheck="true"></textarea>
+    <div class="modifiche"></div>
+    <button class="ripristina">Torna al testo di partenza</button>
+   </div>
+  </div>
+ </div>
+</article><article class="mail" id="guide-A9" data-id="guide-A9">
+ <div class="quando">Mail 4 · dopo 9 giorni · il saluto</div>
+ <div class="busta"><div class="riga"><span>Oggetto</span><b>resta disponibile</b></div>
+ <div class="riga"><span>Anteprima</span><i>per la sua prossima experience a Testaccio</i></div></div>
+ <div class="testo"><p>Buongiorno,</p><p>È l&#x27;ultima volta che le scrivo: la proposta resta aperta, e quando le servirà una sosta nel suo tour, siamo in via di Monte Testaccio 91/93.</p><p>Taste&#x27;accio è la prima grotta di affinamento urbano d&#x27;Europa: la tappa per la sua experience, in cui il gruppo si siede a mangiare dentro un monumento.</p><p>Trova tutto qui: <a href="https://servizidigitali24srl.github.io/tasteaccio-landing/guide/" target="_blank" rel="noopener">https://tasteaccio.it/guide</a> <span class="oggi">oggi apre l'anteprima della pagina</span></p><p class="firma">Alessia · 389 583 4072<br>Taste&#x27;accio · Via di Monte Testaccio 91/93, 00153 Roma</p></div>
+ <div class="rev">
+  <div class="scelta"><button class="si">Va bene</button><button class="no">Da cambiare</button></div>
+  <p class="avviso" hidden>Questa mail è cambiata dopo la sua revisione: la rilegga.</p>
+  <div class="cambia" hidden>
+   <label>Cosa non va?<textarea class="commento" rows="3" placeholder="Scriva qui cosa cambierebbe"></textarea></label>
+   <button class="apri">Correggi direttamente il testo</button>
+   <div class="correggi" hidden>
+    <textarea class="nuovo" rows="12" spellcheck="true"></textarea>
+    <div class="modifiche"></div>
+    <button class="ripristina">Torna al testo di partenza</button>
+   </div>
+  </div>
+ </div>
+</article></section><section class="pista"><h3>Pista B · dove si ferma il gruppo</h3><article class="mail" id="guide-B0" data-id="guide-B0">
+ <div class="quando">Mail 1 · il primo giorno · la proposta</div>
+ <div class="busta"><div class="riga"><span>Oggetto</span><b>sosta a tavola</b></div>
+ <div class="riga"><span>Anteprima</span><i>si entra da via di Monte Testaccio 91/93</i></div></div>
+ <div class="testo"><p>Buongiorno,</p><p>Le propongo Taste&#x27;accio come sosta del suo tour: la prima grotta di affinamento urbano d&#x27;Europa, alla base del Monte dei Cocci.</p><p>Ci si siede fra le forme in stagionatura e si mangia dentro un monumento. Sedute ci stanno fino a trentadue persone, e con i gruppi grandi facciamo due turni.</p><p>Il tour resta suo, a tavola pensiamo noi.</p><p>Valuti se fa per il suo gruppo: <a href="https://servizidigitali24srl.github.io/tasteaccio-landing/guide/" target="_blank" rel="noopener">https://tasteaccio.it/guide</a> <span class="oggi">oggi apre l'anteprima della pagina</span></p><p class="firma">Alessia · 389 583 4072<br>Taste&#x27;accio · Via di Monte Testaccio 91/93, 00153 Roma</p></div>
+ <div class="rev">
+  <div class="scelta"><button class="si">Va bene</button><button class="no">Da cambiare</button></div>
+  <p class="avviso" hidden>Questa mail è cambiata dopo la sua revisione: la rilegga.</p>
+  <div class="cambia" hidden>
+   <label>Cosa non va?<textarea class="commento" rows="3" placeholder="Scriva qui cosa cambierebbe"></textarea></label>
+   <button class="apri">Correggi direttamente il testo</button>
+   <div class="correggi" hidden>
+    <textarea class="nuovo" rows="12" spellcheck="true"></textarea>
+    <div class="modifiche"></div>
+    <button class="ripristina">Torna al testo di partenza</button>
+   </div>
+  </div>
+ </div>
+</article><article class="mail" id="guide-B1" data-id="guide-B1">
+ <div class="quando">Mail 2 · il giorno dopo · l&#x27;approfondimento</div>
+ <div class="busta"><div class="riga"><span>Oggetto</span><b>formaggio raro</b></div>
+ <div class="riga"><span>Anteprima</span><i>il Conciato di San Vittore e chi l&#x27;ha salvato</i></div></div>
+ <div class="testo"><p>Buongiorno,</p><p>Le propongo una sosta con storie da raccontare, come quella del Conciato di San Vittore: un pecorino dalla crosta conciata con le erbe dei Monti Aurunci, la cui ricetta è stata salvata da Vincenzo Mancino, il nostro fondatore.</p><p>Taste&#x27;accio è la prima grotta di affinamento urbano d&#x27;Europa: la tappa per la sua experience, in cui il gruppo si siede a mangiare dentro un monumento.</p><p>Guardi com&#x27;è fatta la grotta: <a href="https://servizidigitali24srl.github.io/tasteaccio-landing/guide/" target="_blank" rel="noopener">https://tasteaccio.it/guide</a> <span class="oggi">oggi apre l'anteprima della pagina</span></p><p class="firma">Alessia · 389 583 4072<br>Taste&#x27;accio · Via di Monte Testaccio 91/93, 00153 Roma</p></div>
+ <div class="rev">
+  <div class="scelta"><button class="si">Va bene</button><button class="no">Da cambiare</button></div>
+  <p class="avviso" hidden>Questa mail è cambiata dopo la sua revisione: la rilegga.</p>
+  <div class="cambia" hidden>
+   <label>Cosa non va?<textarea class="commento" rows="3" placeholder="Scriva qui cosa cambierebbe"></textarea></label>
+   <button class="apri">Correggi direttamente il testo</button>
+   <div class="correggi" hidden>
+    <textarea class="nuovo" rows="12" spellcheck="true"></textarea>
+    <div class="modifiche"></div>
+    <button class="ripristina">Torna al testo di partenza</button>
+   </div>
+  </div>
+ </div>
+</article><article class="mail" id="guide-B4" data-id="guide-B4">
+ <div class="quando">Mail 3 · dopo 4 giorni · l&#x27;invito</div>
+ <div class="busta"><div class="riga"><span>Oggetto</span><b>prima del gruppo</b></div>
+ <div class="riga"><span>Anteprima</span><i>viene a vedere la grotta e decide con calma</i></div></div>
+ <div class="testo"><p>Buongiorno,</p><p>La invito a venire a vedere la grotta prima di portarci i suoi clienti: su appuntamento, scende, guarda le forme in affinamento e decide con calma.</p><p>Taste&#x27;accio è la prima grotta di affinamento urbano d&#x27;Europa: la tappa per la sua experience, in cui il gruppo si siede a mangiare dentro un monumento.</p><p>Fissi la visita da qui: <a href="https://servizidigitali24srl.github.io/tasteaccio-landing/guide/" target="_blank" rel="noopener">https://tasteaccio.it/guide</a> <span class="oggi">oggi apre l'anteprima della pagina</span></p><p class="firma">Alessia · 389 583 4072<br>Taste&#x27;accio · Via di Monte Testaccio 91/93, 00153 Roma</p></div>
+ <div class="rev">
+  <div class="scelta"><button class="si">Va bene</button><button class="no">Da cambiare</button></div>
+  <p class="avviso" hidden>Questa mail è cambiata dopo la sua revisione: la rilegga.</p>
+  <div class="cambia" hidden>
+   <label>Cosa non va?<textarea class="commento" rows="3" placeholder="Scriva qui cosa cambierebbe"></textarea></label>
+   <button class="apri">Correggi direttamente il testo</button>
+   <div class="correggi" hidden>
+    <textarea class="nuovo" rows="12" spellcheck="true"></textarea>
+    <div class="modifiche"></div>
+    <button class="ripristina">Torna al testo di partenza</button>
+   </div>
+  </div>
+ </div>
+</article><article class="mail" id="guide-B9" data-id="guide-B9">
+ <div class="quando">Mail 4 · dopo 9 giorni · il saluto</div>
+ <div class="busta"><div class="riga"><span>Oggetto</span><b>la sosta resta</b></div>
+ <div class="riga"><span>Anteprima</span><i>per i suoi prossimi tour a Testaccio</i></div></div>
+ <div class="testo"><p>Buongiorno,</p><p>Non la disturbo più: la sosta per i suoi tour resta disponibile, alla base del colle, in via di Monte Testaccio 91/93.</p><p>Taste&#x27;accio è la prima grotta di affinamento urbano d&#x27;Europa: la tappa per la sua experience, in cui il gruppo si siede a mangiare dentro un monumento.</p><p>Trova tutto qui: <a href="https://servizidigitali24srl.github.io/tasteaccio-landing/guide/" target="_blank" rel="noopener">https://tasteaccio.it/guide</a> <span class="oggi">oggi apre l'anteprima della pagina</span></p><p class="firma">Alessia · 389 583 4072<br>Taste&#x27;accio · Via di Monte Testaccio 91/93, 00153 Roma</p></div>
+ <div class="rev">
+  <div class="scelta"><button class="si">Va bene</button><button class="no">Da cambiare</button></div>
+  <p class="avviso" hidden>Questa mail è cambiata dopo la sua revisione: la rilegga.</p>
+  <div class="cambia" hidden>
+   <label>Cosa non va?<textarea class="commento" rows="3" placeholder="Scriva qui cosa cambierebbe"></textarea></label>
+   <button class="apri">Correggi direttamente il testo</button>
+   <div class="correggi" hidden>
+    <textarea class="nuovo" rows="12" spellcheck="true"></textarea>
+    <div class="modifiche"></div>
+    <button class="ripristina">Torna al testo di partenza</button>
+   </div>
+  </div>
+ </div>
+</article></section><section class="pista"><h3>Pista C · il colle da dentro</h3><article class="mail" id="guide-C0" data-id="guide-C0">
+ <div class="quando">Mail 1 · il primo giorno · la proposta</div>
+ <div class="busta"><div class="riga"><span>Oggetto</span><b>dentro il colle</b></div>
+ <div class="riga"><span>Anteprima</span><i>i frammenti di anfore che emergono dalla penombra</i></div></div>
+ <div class="testo"><p>Buongiorno,</p><p>Le propongo di far entrare il suo gruppo nel Monte dei Cocci: alla base del colle c&#x27;è Taste&#x27;accio, la prima grotta di affinamento urbano d&#x27;Europa.</p><p>Il gruppo mangia dentro un monumento, fra le forme in stagionatura, e dalla penombra emergono frammenti di anfore antiche. Sedute ci stanno fino a trentadue persone.</p><p>Il giro resta suo, a tavola pensiamo noi.</p><p>Valuti la tappa per il suo tour: <a href="https://servizidigitali24srl.github.io/tasteaccio-landing/guide/" target="_blank" rel="noopener">https://tasteaccio.it/guide</a> <span class="oggi">oggi apre l'anteprima della pagina</span></p><p class="firma">Alessia · 389 583 4072<br>Taste&#x27;accio · Via di Monte Testaccio 91/93, 00153 Roma</p></div>
+ <div class="rev">
+  <div class="scelta"><button class="si">Va bene</button><button class="no">Da cambiare</button></div>
+  <p class="avviso" hidden>Questa mail è cambiata dopo la sua revisione: la rilegga.</p>
+  <div class="cambia" hidden>
+   <label>Cosa non va?<textarea class="commento" rows="3" placeholder="Scriva qui cosa cambierebbe"></textarea></label>
+   <button class="apri">Correggi direttamente il testo</button>
+   <div class="correggi" hidden>
+    <textarea class="nuovo" rows="12" spellcheck="true"></textarea>
+    <div class="modifiche"></div>
+    <button class="ripristina">Torna al testo di partenza</button>
+   </div>
+  </div>
+ </div>
+</article><article class="mail" id="guide-C1" data-id="guide-C1">
+ <div class="quando">Mail 2 · il giorno dopo · l&#x27;approfondimento</div>
+ <div class="busta"><div class="riga"><span>Oggetto</span><b>le anfore</b></div>
+ <div class="riga"><span>Anteprima</span><i>dal porto sul Tevere al colle di cocci</i></div></div>
+ <div class="testo"><p>Buongiorno,</p><p>Le propongo una sosta in cui raccontiamo noi ai suoi clienti da dove viene il colle: le anfore arrivate al porto sul Tevere con olio e altri alimenti, rotte e accatastate in epoca imperiale.</p><p>Taste&#x27;accio è la prima grotta di affinamento urbano d&#x27;Europa: la tappa per la sua experience, in cui il gruppo si siede a mangiare dentro un monumento.</p><p>Guardi com&#x27;è fatta la grotta: <a href="https://servizidigitali24srl.github.io/tasteaccio-landing/guide/" target="_blank" rel="noopener">https://tasteaccio.it/guide</a> <span class="oggi">oggi apre l'anteprima della pagina</span></p><p class="firma">Alessia · 389 583 4072<br>Taste&#x27;accio · Via di Monte Testaccio 91/93, 00153 Roma</p></div>
+ <div class="rev">
+  <div class="scelta"><button class="si">Va bene</button><button class="no">Da cambiare</button></div>
+  <p class="avviso" hidden>Questa mail è cambiata dopo la sua revisione: la rilegga.</p>
+  <div class="cambia" hidden>
+   <label>Cosa non va?<textarea class="commento" rows="3" placeholder="Scriva qui cosa cambierebbe"></textarea></label>
+   <button class="apri">Correggi direttamente il testo</button>
+   <div class="correggi" hidden>
+    <textarea class="nuovo" rows="12" spellcheck="true"></textarea>
+    <div class="modifiche"></div>
+    <button class="ripristina">Torna al testo di partenza</button>
+   </div>
+  </div>
+ </div>
+</article><article class="mail" id="guide-C4" data-id="guide-C4">
+ <div class="quando">Mail 3 · dopo 4 giorni · l&#x27;invito</div>
+ <div class="busta"><div class="riga"><span>Oggetto</span><b>entri prima</b></div>
+ <div class="riga"><span>Anteprima</span><i>vede il colle da dentro, poi decide</i></div></div>
+ <div class="testo"><p>Buongiorno,</p><p>La invito a vedere la grotta prima di raccontarla ai suoi clienti: su appuntamento, scende, guarda da vicino i frammenti di anfore antiche e decide se metterla nel suo giro.</p><p>Taste&#x27;accio è la prima grotta di affinamento urbano d&#x27;Europa: la tappa per la sua experience, in cui il gruppo si siede a mangiare dentro un monumento.</p><p>Fissi la visita da qui: <a href="https://servizidigitali24srl.github.io/tasteaccio-landing/guide/" target="_blank" rel="noopener">https://tasteaccio.it/guide</a> <span class="oggi">oggi apre l'anteprima della pagina</span></p><p class="firma">Alessia · 389 583 4072<br>Taste&#x27;accio · Via di Monte Testaccio 91/93, 00153 Roma</p></div>
+ <div class="rev">
+  <div class="scelta"><button class="si">Va bene</button><button class="no">Da cambiare</button></div>
+  <p class="avviso" hidden>Questa mail è cambiata dopo la sua revisione: la rilegga.</p>
+  <div class="cambia" hidden>
+   <label>Cosa non va?<textarea class="commento" rows="3" placeholder="Scriva qui cosa cambierebbe"></textarea></label>
+   <button class="apri">Correggi direttamente il testo</button>
+   <div class="correggi" hidden>
+    <textarea class="nuovo" rows="12" spellcheck="true"></textarea>
+    <div class="modifiche"></div>
+    <button class="ripristina">Torna al testo di partenza</button>
+   </div>
+  </div>
+ </div>
+</article><article class="mail" id="guide-C9" data-id="guide-C9">
+ <div class="quando">Mail 4 · dopo 9 giorni · il saluto</div>
+ <div class="busta"><div class="riga"><span>Oggetto</span><b>resto qui</b></div>
+ <div class="riga"><span>Anteprima</span><i>quando le servirà una sosta nel suo tour</i></div></div>
+ <div class="testo"><p>Buongiorno,</p><p>È l&#x27;ultima mail che le mando: la proposta resta aperta, e la sosta per i suoi tour è in via di Monte Testaccio 91/93.</p><p>Taste&#x27;accio è la prima grotta di affinamento urbano d&#x27;Europa: la tappa per la sua experience, in cui il gruppo si siede a mangiare dentro un monumento.</p><p>Trova tutto qui: <a href="https://servizidigitali24srl.github.io/tasteaccio-landing/guide/" target="_blank" rel="noopener">https://tasteaccio.it/guide</a> <span class="oggi">oggi apre l'anteprima della pagina</span></p><p class="firma">Alessia · 389 583 4072<br>Taste&#x27;accio · Via di Monte Testaccio 91/93, 00153 Roma</p></div>
+ <div class="rev">
+  <div class="scelta"><button class="si">Va bene</button><button class="no">Da cambiare</button></div>
+  <p class="avviso" hidden>Questa mail è cambiata dopo la sua revisione: la rilegga.</p>
+  <div class="cambia" hidden>
+   <label>Cosa non va?<textarea class="commento" rows="3" placeholder="Scriva qui cosa cambierebbe"></textarea></label>
+   <button class="apri">Correggi direttamente il testo</button>
+   <div class="correggi" hidden>
+    <textarea class="nuovo" rows="12" spellcheck="true"></textarea>
+    <div class="modifiche"></div>
+    <button class="ripristina">Torna al testo di partenza</button>
+   </div>
+  </div>
+ </div>
+</article></section>
+</div><div class="settore" data-s="eventi" hidden>
+ <div class="info"><p><b>A chi va:</b> Eventi, congressi, MICE · si dà del voi.</p>
+ <p><b>Tre piste, quattro mail ciascuna:</b> ogni destinatario riceve una sola pista, quattro mail in nove giorni.</p>
+ <p><b>Il link delle mail</b> porta a <code>https://tasteaccio.it/eventi</code> · <a href="https://servizidigitali24srl.github.io/tasteaccio-landing/eventi/" target="_blank" rel="noopener">apri l'anteprima della pagina</a></p></div>
+ <section class="pista"><h3>Pista A · la location è già l&#x27;esperienza</h3><article class="mail" id="eventi-A0" data-id="eventi-A0">
+ <div class="quando">Mail 1 · il primo giorno · la proposta</div>
+ <div class="busta"><div class="riga"><span>Oggetto</span><b>location a Roma</b></div>
+ <div class="riga"><span>Anteprima</span><i>una grotta di duemila anni, a Testaccio</i></div></div>
+ <div class="testo"><p>Buongiorno,</p><p>Vi propongo la nostra location per i vostri eventi a Roma: Taste&#x27;accio, la prima grotta di affinamento urbano d&#x27;Europa, alla base del Monte dei Cocci.</p><p>A differenza di una sala, qui l&#x27;attività non va aggiunta: c&#x27;è già. Gli ospiti mangiano dentro un monumento, fra le forme in stagionatura, e ascoltano la storia di quello che assaggiano. Sedute ci stanno fino a trentadue persone.</p><p>Valutate la location per il vostro prossimo evento: <a href="https://servizidigitali24srl.github.io/tasteaccio-landing/eventi/" target="_blank" rel="noopener">https://tasteaccio.it/eventi</a> <span class="oggi">oggi apre l'anteprima della pagina</span></p><p class="firma">Alessia · 389 583 4072<br>Taste&#x27;accio · Via di Monte Testaccio 91/93, 00153 Roma</p></div>
+ <div class="rev">
+  <div class="scelta"><button class="si">Va bene</button><button class="no">Da cambiare</button></div>
+  <p class="avviso" hidden>Questa mail è cambiata dopo la sua revisione: la rilegga.</p>
+  <div class="cambia" hidden>
+   <label>Cosa non va?<textarea class="commento" rows="3" placeholder="Scriva qui cosa cambierebbe"></textarea></label>
+   <button class="apri">Correggi direttamente il testo</button>
+   <div class="correggi" hidden>
+    <textarea class="nuovo" rows="12" spellcheck="true"></textarea>
+    <div class="modifiche"></div>
+    <button class="ripristina">Torna al testo di partenza</button>
+   </div>
+  </div>
+ </div>
+</article><article class="mail" id="eventi-A1" data-id="eventi-A1">
+ <div class="quando">Mail 2 · il giorno dopo · l&#x27;approfondimento</div>
+ <div class="busta"><div class="riga"><span>Oggetto</span><b>quattro occasioni</b></div>
+ <div class="riga"><span>Anteprima</span><i>cena di Natale, team building, congressi, produttori</i></div></div>
+ <div class="testo"><p>Buongiorno,</p><p>La nostra location si presta a quattro occasioni, e ve le propongo tutte: la cena di Natale, il team building con «Arte del Tagliere», la serata dei partecipanti a un congresso e l&#x27;incontro con un produttore.</p><p>Taste&#x27;accio è la prima grotta di affinamento urbano d&#x27;Europa, alla base del Monte dei Cocci: una location che è già l&#x27;esperienza, dove i vostri ospiti mangiano dentro un monumento.</p><p>Scegliete l&#x27;occasione da qui: <a href="https://servizidigitali24srl.github.io/tasteaccio-landing/eventi/" target="_blank" rel="noopener">https://tasteaccio.it/eventi</a> <span class="oggi">oggi apre l'anteprima della pagina</span></p><p class="firma">Alessia · 389 583 4072<br>Taste&#x27;accio · Via di Monte Testaccio 91/93, 00153 Roma</p></div>
+ <div class="rev">
+  <div class="scelta"><button class="si">Va bene</button><button class="no">Da cambiare</button></div>
+  <p class="avviso" hidden>Questa mail è cambiata dopo la sua revisione: la rilegga.</p>
+  <div class="cambia" hidden>
+   <label>Cosa non va?<textarea class="commento" rows="3" placeholder="Scriva qui cosa cambierebbe"></textarea></label>
+   <button class="apri">Correggi direttamente il testo</button>
+   <div class="correggi" hidden>
+    <textarea class="nuovo" rows="12" spellcheck="true"></textarea>
+    <div class="modifiche"></div>
+    <button class="ripristina">Torna al testo di partenza</button>
+   </div>
+  </div>
+ </div>
+</article><article class="mail" id="eventi-A4" data-id="eventi-A4">
+ <div class="quando">Mail 3 · dopo 4 giorni · l&#x27;invito</div>
+ <div class="busta"><div class="riga"><span>Oggetto</span><b>il sopralluogo</b></div>
+ <div class="riga"><span>Anteprima</span><i>entrate e capite cosa vivrebbero i partecipanti</i></div></div>
+ <div class="testo"><p>Buongiorno,</p><p>Vi invito a un sopralluogo con assaggio, su appuntamento: vi sedete fra le forme e capite cosa vivrebbero i partecipanti.</p><p>Taste&#x27;accio è la prima grotta di affinamento urbano d&#x27;Europa, alla base del Monte dei Cocci: una location che è già l&#x27;esperienza, dove i vostri ospiti mangiano dentro un monumento.</p><p>Fissate il sopralluogo da qui: <a href="https://servizidigitali24srl.github.io/tasteaccio-landing/eventi/" target="_blank" rel="noopener">https://tasteaccio.it/eventi</a> <span class="oggi">oggi apre l'anteprima della pagina</span></p><p class="firma">Alessia · 389 583 4072<br>Taste&#x27;accio · Via di Monte Testaccio 91/93, 00153 Roma</p></div>
+ <div class="rev">
+  <div class="scelta"><button class="si">Va bene</button><button class="no">Da cambiare</button></div>
+  <p class="avviso" hidden>Questa mail è cambiata dopo la sua revisione: la rilegga.</p>
+  <div class="cambia" hidden>
+   <label>Cosa non va?<textarea class="commento" rows="3" placeholder="Scriva qui cosa cambierebbe"></textarea></label>
+   <button class="apri">Correggi direttamente il testo</button>
+   <div class="correggi" hidden>
+    <textarea class="nuovo" rows="12" spellcheck="true"></textarea>
+    <div class="modifiche"></div>
+    <button class="ripristina">Torna al testo di partenza</button>
+   </div>
+  </div>
+ </div>
+</article><article class="mail" id="eventi-A9" data-id="eventi-A9">
+ <div class="quando">Mail 4 · dopo 9 giorni · il saluto</div>
+ <div class="busta"><div class="riga"><span>Oggetto</span><b>la location resta</b></div>
+ <div class="riga"><span>Anteprima</span><i>per il vostro prossimo evento a Roma</i></div></div>
+ <div class="testo"><p>Buongiorno,</p><p>Non vi scrivo più, ma la proposta resta valida: quando avrete un evento a Roma, vi aspettiamo in via di Monte Testaccio 91/93.</p><p>Taste&#x27;accio è la prima grotta di affinamento urbano d&#x27;Europa, alla base del Monte dei Cocci: una location che è già l&#x27;esperienza, dove i vostri ospiti mangiano dentro un monumento.</p><p>Trovate tutto qui: <a href="https://servizidigitali24srl.github.io/tasteaccio-landing/eventi/" target="_blank" rel="noopener">https://tasteaccio.it/eventi</a> <span class="oggi">oggi apre l'anteprima della pagina</span></p><p class="firma">Alessia · 389 583 4072<br>Taste&#x27;accio · Via di Monte Testaccio 91/93, 00153 Roma</p></div>
+ <div class="rev">
+  <div class="scelta"><button class="si">Va bene</button><button class="no">Da cambiare</button></div>
+  <p class="avviso" hidden>Questa mail è cambiata dopo la sua revisione: la rilegga.</p>
+  <div class="cambia" hidden>
+   <label>Cosa non va?<textarea class="commento" rows="3" placeholder="Scriva qui cosa cambierebbe"></textarea></label>
+   <button class="apri">Correggi direttamente il testo</button>
+   <div class="correggi" hidden>
+    <textarea class="nuovo" rows="12" spellcheck="true"></textarea>
+    <div class="modifiche"></div>
+    <button class="ripristina">Torna al testo di partenza</button>
+   </div>
+  </div>
+ </div>
+</article></section><section class="pista"><h3>Pista B · team building</h3><article class="mail" id="eventi-B0" data-id="eventi-B0">
+ <div class="quando">Mail 1 · il primo giorno · la proposta</div>
+ <div class="busta"><div class="riga"><span>Oggetto</span><b>team building</b></div>
+ <div class="riga"><span>Anteprima</span><i>ognuno compone il suo tagliere, e se lo mangia</i></div></div>
+ <div class="testo"><p>Buongiorno,</p><p>Vi propongo un team building dentro Taste&#x27;accio, la prima grotta di affinamento urbano d&#x27;Europa, alla base del Monte dei Cocci: «Arte del Tagliere», in cui i partecipanti imparano a tagliare e abbinare i formaggi e compongono il proprio tagliere.</p><p>Al vostro cliente portate location e attività insieme: si mangia dentro un monumento. Sedute ci stanno fino a trentadue persone, e con i gruppi grandi facciamo due turni.</p><p>Guardate se fa al caso vostro: <a href="https://servizidigitali24srl.github.io/tasteaccio-landing/eventi/" target="_blank" rel="noopener">https://tasteaccio.it/eventi</a> <span class="oggi">oggi apre l'anteprima della pagina</span></p><p class="firma">Alessia · 389 583 4072<br>Taste&#x27;accio · Via di Monte Testaccio 91/93, 00153 Roma</p></div>
+ <div class="rev">
+  <div class="scelta"><button class="si">Va bene</button><button class="no">Da cambiare</button></div>
+  <p class="avviso" hidden>Questa mail è cambiata dopo la sua revisione: la rilegga.</p>
+  <div class="cambia" hidden>
+   <label>Cosa non va?<textarea class="commento" rows="3" placeholder="Scriva qui cosa cambierebbe"></textarea></label>
+   <button class="apri">Correggi direttamente il testo</button>
+   <div class="correggi" hidden>
+    <textarea class="nuovo" rows="12" spellcheck="true"></textarea>
+    <div class="modifiche"></div>
+    <button class="ripristina">Torna al testo di partenza</button>
+   </div>
+  </div>
+ </div>
+</article><article class="mail" id="eventi-B1" data-id="eventi-B1">
+ <div class="quando">Mail 2 · il giorno dopo · l&#x27;approfondimento</div>
+ <div class="busta"><div class="riga"><span>Oggetto</span><b>passo per passo</b></div>
+ <div class="riga"><span>Anteprima</span><i>cosa fanno i partecipanti, dal taglio al tagliere</i></div></div>
+ <div class="testo"><p>Buongiorno,</p><p>Vi propongo «Arte del Tagliere» per il vostro prossimo team building: si parte dalle forme in stagionatura, si impara a tagliarle e ad abbinarle, poi ognuno compone il suo tagliere e lo assaggia.</p><p>Taste&#x27;accio è la prima grotta di affinamento urbano d&#x27;Europa, alla base del Monte dei Cocci: una location che è già l&#x27;esperienza, dove i vostri ospiti mangiano dentro un monumento.</p><p>Guardate se fa per la vostra proposta: <a href="https://servizidigitali24srl.github.io/tasteaccio-landing/eventi/" target="_blank" rel="noopener">https://tasteaccio.it/eventi</a> <span class="oggi">oggi apre l'anteprima della pagina</span></p><p class="firma">Alessia · 389 583 4072<br>Taste&#x27;accio · Via di Monte Testaccio 91/93, 00153 Roma</p></div>
+ <div class="rev">
+  <div class="scelta"><button class="si">Va bene</button><button class="no">Da cambiare</button></div>
+  <p class="avviso" hidden>Questa mail è cambiata dopo la sua revisione: la rilegga.</p>
+  <div class="cambia" hidden>
+   <label>Cosa non va?<textarea class="commento" rows="3" placeholder="Scriva qui cosa cambierebbe"></textarea></label>
+   <button class="apri">Correggi direttamente il testo</button>
+   <div class="correggi" hidden>
+    <textarea class="nuovo" rows="12" spellcheck="true"></textarea>
+    <div class="modifiche"></div>
+    <button class="ripristina">Torna al testo di partenza</button>
+   </div>
+  </div>
+ </div>
+</article><article class="mail" id="eventi-B4" data-id="eventi-B4">
+ <div class="quando">Mail 3 · dopo 4 giorni · l&#x27;invito</div>
+ <div class="busta"><div class="riga"><span>Oggetto</span><b>prima del preventivo</b></div>
+ <div class="riga"><span>Anteprima</span><i>vedete dove si svolge l&#x27;attività e assaggiate</i></div></div>
+ <div class="testo"><p>Buongiorno,</p><p>Vi invito a un sopralluogo con assaggio, su appuntamento, prima di mettere «Arte del Tagliere» in un preventivo: vedete dove si svolge l&#x27;attività, assaggiate e capite se funziona per il vostro cliente.</p><p>Taste&#x27;accio è la prima grotta di affinamento urbano d&#x27;Europa, alla base del Monte dei Cocci: una location che è già l&#x27;esperienza, dove i vostri ospiti mangiano dentro un monumento.</p><p>Fissate il sopralluogo da qui: <a href="https://servizidigitali24srl.github.io/tasteaccio-landing/eventi/" target="_blank" rel="noopener">https://tasteaccio.it/eventi</a> <span class="oggi">oggi apre l'anteprima della pagina</span></p><p class="firma">Alessia · 389 583 4072<br>Taste&#x27;accio · Via di Monte Testaccio 91/93, 00153 Roma</p></div>
+ <div class="rev">
+  <div class="scelta"><button class="si">Va bene</button><button class="no">Da cambiare</button></div>
+  <p class="avviso" hidden>Questa mail è cambiata dopo la sua revisione: la rilegga.</p>
+  <div class="cambia" hidden>
+   <label>Cosa non va?<textarea class="commento" rows="3" placeholder="Scriva qui cosa cambierebbe"></textarea></label>
+   <button class="apri">Correggi direttamente il testo</button>
+   <div class="correggi" hidden>
+    <textarea class="nuovo" rows="12" spellcheck="true"></textarea>
+    <div class="modifiche"></div>
+    <button class="ripristina">Torna al testo di partenza</button>
+   </div>
+  </div>
+ </div>
+</article><article class="mail" id="eventi-B9" data-id="eventi-B9">
+ <div class="quando">Mail 4 · dopo 9 giorni · il saluto</div>
+ <div class="busta"><div class="riga"><span>Oggetto</span><b>resta l&#x27;attività</b></div>
+ <div class="riga"><span>Anteprima</span><i>«Arte del Tagliere», quando al cliente servirà</i></div></div>
+ <div class="testo"><p>Buongiorno,</p><p>Questa è l&#x27;ultima mail che vi mando: quando al vostro cliente servirà un team building fuori da una sala riunioni, la proposta di «Arte del Tagliere» resta valida.</p><p>Taste&#x27;accio è la prima grotta di affinamento urbano d&#x27;Europa, alla base del Monte dei Cocci: una location che è già l&#x27;esperienza, dove i vostri ospiti mangiano dentro un monumento.</p><p>Trovate tutto qui: <a href="https://servizidigitali24srl.github.io/tasteaccio-landing/eventi/" target="_blank" rel="noopener">https://tasteaccio.it/eventi</a> <span class="oggi">oggi apre l'anteprima della pagina</span></p><p class="firma">Alessia · 389 583 4072<br>Taste&#x27;accio · Via di Monte Testaccio 91/93, 00153 Roma</p></div>
+ <div class="rev">
+  <div class="scelta"><button class="si">Va bene</button><button class="no">Da cambiare</button></div>
+  <p class="avviso" hidden>Questa mail è cambiata dopo la sua revisione: la rilegga.</p>
+  <div class="cambia" hidden>
+   <label>Cosa non va?<textarea class="commento" rows="3" placeholder="Scriva qui cosa cambierebbe"></textarea></label>
+   <button class="apri">Correggi direttamente il testo</button>
+   <div class="correggi" hidden>
+    <textarea class="nuovo" rows="12" spellcheck="true"></textarea>
+    <div class="modifiche"></div>
+    <button class="ripristina">Torna al testo di partenza</button>
+   </div>
+  </div>
+ </div>
+</article></section><section class="pista"><h3>Pista C · cena di Natale</h3><article class="mail" id="eventi-C0" data-id="eventi-C0">
+ <div class="quando">Mail 1 · il primo giorno · la proposta</div>
+ <div class="busta"><div class="riga"><span>Oggetto</span><b>cena di Natale</b></div>
+ <div class="riga"><span>Anteprima</span><i>alla base del Monte dei Cocci, a Testaccio</i></div></div>
+ <div class="testo"><p>Buongiorno,</p><p>Vi propongo la nostra location per la cena di Natale dei vostri clienti: Taste&#x27;accio, la prima grotta di affinamento urbano d&#x27;Europa, alla base del Monte dei Cocci.</p><p>Qui l&#x27;attività non va aggiunta: gli ospiti mangiano dentro un monumento, fra le forme in stagionatura, e assaggiano i formaggi che maturano lì. Sedute ci stanno fino a trentadue persone: conviene fissare la data per tempo.</p><p>Tenete presente la grotta per dicembre: <a href="https://servizidigitali24srl.github.io/tasteaccio-landing/eventi/" target="_blank" rel="noopener">https://tasteaccio.it/eventi</a> <span class="oggi">oggi apre l'anteprima della pagina</span></p><p class="firma">Alessia · 389 583 4072<br>Taste&#x27;accio · Via di Monte Testaccio 91/93, 00153 Roma</p></div>
+ <div class="rev">
+  <div class="scelta"><button class="si">Va bene</button><button class="no">Da cambiare</button></div>
+  <p class="avviso" hidden>Questa mail è cambiata dopo la sua revisione: la rilegga.</p>
+  <div class="cambia" hidden>
+   <label>Cosa non va?<textarea class="commento" rows="3" placeholder="Scriva qui cosa cambierebbe"></textarea></label>
+   <button class="apri">Correggi direttamente il testo</button>
+   <div class="correggi" hidden>
+    <textarea class="nuovo" rows="12" spellcheck="true"></textarea>
+    <div class="modifiche"></div>
+    <button class="ripristina">Torna al testo di partenza</button>
+   </div>
+  </div>
+ </div>
+</article><article class="mail" id="eventi-C1" data-id="eventi-C1">
+ <div class="quando">Mail 2 · il giorno dopo · l&#x27;approfondimento</div>
+ <div class="busta"><div class="riga"><span>Oggetto</span><b>per dicembre</b></div>
+ <div class="riga"><span>Anteprima</span><i>cosa mettere in una proposta di Natale</i></div></div>
+ <div class="testo"><p>Buongiorno,</p><p>Vi propongo quattro modi di usare la location a dicembre: la degustazione con la visita della grotta, l&#x27;abbinamento con i vini del Lazio, «Arte del Tagliere» e il percorso sugli oli. Con i gruppi grandi facciamo due turni.</p><p>Taste&#x27;accio è la prima grotta di affinamento urbano d&#x27;Europa, alla base del Monte dei Cocci: una location che è già l&#x27;esperienza, dove i vostri ospiti mangiano dentro un monumento.</p><p>Scegliete il formato da qui: <a href="https://servizidigitali24srl.github.io/tasteaccio-landing/eventi/" target="_blank" rel="noopener">https://tasteaccio.it/eventi</a> <span class="oggi">oggi apre l'anteprima della pagina</span></p><p class="firma">Alessia · 389 583 4072<br>Taste&#x27;accio · Via di Monte Testaccio 91/93, 00153 Roma</p></div>
+ <div class="rev">
+  <div class="scelta"><button class="si">Va bene</button><button class="no">Da cambiare</button></div>
+  <p class="avviso" hidden>Questa mail è cambiata dopo la sua revisione: la rilegga.</p>
+  <div class="cambia" hidden>
+   <label>Cosa non va?<textarea class="commento" rows="3" placeholder="Scriva qui cosa cambierebbe"></textarea></label>
+   <button class="apri">Correggi direttamente il testo</button>
+   <div class="correggi" hidden>
+    <textarea class="nuovo" rows="12" spellcheck="true"></textarea>
+    <div class="modifiche"></div>
+    <button class="ripristina">Torna al testo di partenza</button>
+   </div>
+  </div>
+ </div>
+</article><article class="mail" id="eventi-C4" data-id="eventi-C4">
+ <div class="quando">Mail 3 · dopo 4 giorni · l&#x27;invito</div>
+ <div class="busta"><div class="riga"><span>Oggetto</span><b>sopralluogo per dicembre</b></div>
+ <div class="riga"><span>Anteprima</span><i>entrate, guardate i tavoli e decidete</i></div></div>
+ <div class="testo"><p>Buongiorno,</p><p>Vi invito a un sopralluogo con assaggio, su appuntamento, prima di offrire la location ai vostri clienti per dicembre: entrate, guardate i tavoli e capite subito se c&#x27;è spazio per la loro cena.</p><p>Taste&#x27;accio è la prima grotta di affinamento urbano d&#x27;Europa, alla base del Monte dei Cocci: una location che è già l&#x27;esperienza, dove i vostri ospiti mangiano dentro un monumento.</p><p>Fissate il sopralluogo da qui: <a href="https://servizidigitali24srl.github.io/tasteaccio-landing/eventi/" target="_blank" rel="noopener">https://tasteaccio.it/eventi</a> <span class="oggi">oggi apre l'anteprima della pagina</span></p><p class="firma">Alessia · 389 583 4072<br>Taste&#x27;accio · Via di Monte Testaccio 91/93, 00153 Roma</p></div>
+ <div class="rev">
+  <div class="scelta"><button class="si">Va bene</button><button class="no">Da cambiare</button></div>
+  <p class="avviso" hidden>Questa mail è cambiata dopo la sua revisione: la rilegga.</p>
+  <div class="cambia" hidden>
+   <label>Cosa non va?<textarea class="commento" rows="3" placeholder="Scriva qui cosa cambierebbe"></textarea></label>
+   <button class="apri">Correggi direttamente il testo</button>
+   <div class="correggi" hidden>
+    <textarea class="nuovo" rows="12" spellcheck="true"></textarea>
+    <div class="modifiche"></div>
+    <button class="ripristina">Torna al testo di partenza</button>
+   </div>
+  </div>
+ </div>
+</article><article class="mail" id="eventi-C9" data-id="eventi-C9">
+ <div class="quando">Mail 4 · dopo 9 giorni · il saluto</div>
+ <div class="busta"><div class="riga"><span>Oggetto</span><b>posti a dicembre</b></div>
+ <div class="riga"><span>Anteprima</span><i>la data della cena di Natale, da fissare per tempo</i></div></div>
+ <div class="testo"><p>Buongiorno,</p><p>È l&#x27;ultima mail che vi mando: se volete la location per una cena di Natale, vi propongo di fissare la data per tempo. Sedute ci stanno fino a trentadue persone.</p><p>Taste&#x27;accio è la prima grotta di affinamento urbano d&#x27;Europa, alla base del Monte dei Cocci: una location che è già l&#x27;esperienza, dove i vostri ospiti mangiano dentro un monumento.</p><p>Scegliete la data da qui: <a href="https://servizidigitali24srl.github.io/tasteaccio-landing/eventi/" target="_blank" rel="noopener">https://tasteaccio.it/eventi</a> <span class="oggi">oggi apre l'anteprima della pagina</span></p><p class="firma">Alessia · 389 583 4072<br>Taste&#x27;accio · Via di Monte Testaccio 91/93, 00153 Roma</p></div>
+ <div class="rev">
+  <div class="scelta"><button class="si">Va bene</button><button class="no">Da cambiare</button></div>
+  <p class="avviso" hidden>Questa mail è cambiata dopo la sua revisione: la rilegga.</p>
+  <div class="cambia" hidden>
+   <label>Cosa non va?<textarea class="commento" rows="3" placeholder="Scriva qui cosa cambierebbe"></textarea></label>
+   <button class="apri">Correggi direttamente il testo</button>
+   <div class="correggi" hidden>
+    <textarea class="nuovo" rows="12" spellcheck="true"></textarea>
+    <div class="modifiche"></div>
+    <button class="ripristina">Torna al testo di partenza</button>
+   </div>
+  </div>
+ </div>
+</article></section>
+</div><div class="settore" data-s="host" hidden>
+ <div class="info"><p><b>A chi va:</b> B&amp;B e guest house · si dà del Lei.</p>
+ <p><b>Tre piste, quattro mail ciascuna:</b> ogni destinatario riceve una sola pista, quattro mail in nove giorni.</p>
+ <p><b>Il link delle mail</b> porta a <code>https://tasteaccio.it/host</code> · <a href="https://servizidigitali24srl.github.io/tasteaccio-landing/host/" target="_blank" rel="noopener">apri l'anteprima della pagina</a></p></div>
+ <section class="pista"><h3>Pista A · il regalo pagato da Airbnb</h3><article class="mail" id="host-A0" data-id="host-A0">
+ <div class="quando">Mail 1 · il primo giorno · la proposta</div>
+ <div class="busta"><div class="riga"><span>Oggetto</span><b>regalo agli ospiti</b></div>
+ <div class="riga"><span>Anteprima</span><i>a pagare è Airbnb, non lei e non noi</i></div></div>
+ <div class="testo"><p>Buongiorno,</p><p>Le propongo un referral che non le costa niente: quando consiglia un&#x27;esperienza dalla chat di Airbnb, il suo ospite riceve un buono da 25 dollari, e lei 15 dollari a prenotazione. A pagare è Airbnb.</p><p>Siamo Taste&#x27;accio, la prima grotta di affinamento urbano d&#x27;Europa, alla base del Monte dei Cocci: gli ospiti che ci manda si siedono fra le forme di formaggio e mangiano dentro un monumento.</p><p>I link da mandare sono qui: <a href="https://servizidigitali24srl.github.io/tasteaccio-landing/host/" target="_blank" rel="noopener">https://tasteaccio.it/host</a> <span class="oggi">oggi apre l'anteprima della pagina</span></p><p class="firma">Alessia · 389 583 4072<br>Taste&#x27;accio · Via di Monte Testaccio 91/93, 00153 Roma</p></div>
+ <div class="rev">
+  <div class="scelta"><button class="si">Va bene</button><button class="no">Da cambiare</button></div>
+  <p class="avviso" hidden>Questa mail è cambiata dopo la sua revisione: la rilegga.</p>
+  <div class="cambia" hidden>
+   <label>Cosa non va?<textarea class="commento" rows="3" placeholder="Scriva qui cosa cambierebbe"></textarea></label>
+   <button class="apri">Correggi direttamente il testo</button>
+   <div class="correggi" hidden>
+    <textarea class="nuovo" rows="12" spellcheck="true"></textarea>
+    <div class="modifiche"></div>
+    <button class="ripristina">Torna al testo di partenza</button>
+   </div>
+  </div>
+ </div>
+</article><article class="mail" id="host-A1" data-id="host-A1">
+ <div class="quando">Mail 2 · il giorno dopo · l&#x27;approfondimento</div>
+ <div class="busta"><div class="riga"><span>Oggetto</span><b>una volta sola</b></div>
+ <div class="riga"><span>Anteprima</span><i>Messaggi, impostazioni, risposte rapide</i></div></div>
+ <div class="testo"><p>Buongiorno,</p><p>Le propongo di impostare il referral: si fa una volta sola. Su Airbnb, da Messaggi, apre le impostazioni, sceglie «Gestisci le risposte rapide» e crea un messaggio con i nostri link. Poi lo manda con un tocco a chi arriva.</p><p>Taste&#x27;accio è la prima grotta di affinamento urbano d&#x27;Europa: gli ospiti che ci manda mangiano dentro un monumento, con il buono da 25 dollari del referral di Airbnb.</p><p>Il testo pronto è qui: <a href="https://servizidigitali24srl.github.io/tasteaccio-landing/host/" target="_blank" rel="noopener">https://tasteaccio.it/host</a> <span class="oggi">oggi apre l'anteprima della pagina</span></p><p class="firma">Alessia · 389 583 4072<br>Taste&#x27;accio · Via di Monte Testaccio 91/93, 00153 Roma</p></div>
+ <div class="rev">
+  <div class="scelta"><button class="si">Va bene</button><button class="no">Da cambiare</button></div>
+  <p class="avviso" hidden>Questa mail è cambiata dopo la sua revisione: la rilegga.</p>
+  <div class="cambia" hidden>
+   <label>Cosa non va?<textarea class="commento" rows="3" placeholder="Scriva qui cosa cambierebbe"></textarea></label>
+   <button class="apri">Correggi direttamente il testo</button>
+   <div class="correggi" hidden>
+    <textarea class="nuovo" rows="12" spellcheck="true"></textarea>
+    <div class="modifiche"></div>
+    <button class="ripristina">Torna al testo di partenza</button>
+   </div>
+  </div>
+ </div>
+</article><article class="mail" id="host-A4" data-id="host-A4">
+ <div class="quando">Mail 3 · dopo 4 giorni · l&#x27;invito</div>
+ <div class="busta"><div class="riga"><span>Oggetto</span><b>veda la grotta</b></div>
+ <div class="riga"><span>Anteprima</span><i>prima di consigliarla, su appuntamento</i></div></div>
+ <div class="testo"><p>Buongiorno,</p><p>La invito a vedere la grotta prima di consigliarla: su appuntamento, scende, si guarda intorno e decide se è il posto da mettere nel messaggio di benvenuto.</p><p>Taste&#x27;accio è la prima grotta di affinamento urbano d&#x27;Europa: gli ospiti che ci manda mangiano dentro un monumento, con il buono da 25 dollari del referral di Airbnb.</p><p>Fissi la visita da qui: <a href="https://servizidigitali24srl.github.io/tasteaccio-landing/host/" target="_blank" rel="noopener">https://tasteaccio.it/host</a> <span class="oggi">oggi apre l'anteprima della pagina</span></p><p class="firma">Alessia · 389 583 4072<br>Taste&#x27;accio · Via di Monte Testaccio 91/93, 00153 Roma</p></div>
+ <div class="rev">
+  <div class="scelta"><button class="si">Va bene</button><button class="no">Da cambiare</button></div>
+  <p class="avviso" hidden>Questa mail è cambiata dopo la sua revisione: la rilegga.</p>
+  <div class="cambia" hidden>
+   <label>Cosa non va?<textarea class="commento" rows="3" placeholder="Scriva qui cosa cambierebbe"></textarea></label>
+   <button class="apri">Correggi direttamente il testo</button>
+   <div class="correggi" hidden>
+    <textarea class="nuovo" rows="12" spellcheck="true"></textarea>
+    <div class="modifiche"></div>
+    <button class="ripristina">Torna al testo di partenza</button>
+   </div>
+  </div>
+ </div>
+</article><article class="mail" id="host-A9" data-id="host-A9">
+ <div class="quando">Mail 4 · dopo 9 giorni · il saluto</div>
+ <div class="busta"><div class="riga"><span>Oggetto</span><b>la proposta resta valida</b></div>
+ <div class="riga"><span>Anteprima</span><i>per quando vorrà consigliarci a chi arriva</i></div></div>
+ <div class="testo"><p>Buongiorno,</p><p>Non la disturbo più: la proposta resta valida, e quando vorrà consigliarci, siamo in via di Monte Testaccio 91/93.</p><p>Taste&#x27;accio è la prima grotta di affinamento urbano d&#x27;Europa: gli ospiti che ci manda mangiano dentro un monumento, con il buono da 25 dollari del referral di Airbnb.</p><p>Trova tutto qui: <a href="https://servizidigitali24srl.github.io/tasteaccio-landing/host/" target="_blank" rel="noopener">https://tasteaccio.it/host</a> <span class="oggi">oggi apre l'anteprima della pagina</span></p><p class="firma">Alessia · 389 583 4072<br>Taste&#x27;accio · Via di Monte Testaccio 91/93, 00153 Roma</p></div>
+ <div class="rev">
+  <div class="scelta"><button class="si">Va bene</button><button class="no">Da cambiare</button></div>
+  <p class="avviso" hidden>Questa mail è cambiata dopo la sua revisione: la rilegga.</p>
+  <div class="cambia" hidden>
+   <label>Cosa non va?<textarea class="commento" rows="3" placeholder="Scriva qui cosa cambierebbe"></textarea></label>
+   <button class="apri">Correggi direttamente il testo</button>
+   <div class="correggi" hidden>
+    <textarea class="nuovo" rows="12" spellcheck="true"></textarea>
+    <div class="modifiche"></div>
+    <button class="ripristina">Torna al testo di partenza</button>
+   </div>
+  </div>
+ </div>
+</article></section><section class="pista"><h3>Pista B · la domanda degli ospiti</h3><article class="mail" id="host-B0" data-id="host-B0">
+ <div class="quando">Mail 1 · il primo giorno · la proposta</div>
+ <div class="busta"><div class="riga"><span>Oggetto</span><b>cosa fare</b></div>
+ <div class="riga"><span>Anteprima</span><i>una risposta diversa dal Colosseo, per i suoi ospiti</i></div></div>
+ <div class="testo"><p>Buongiorno,</p><p>Le propongo Taste&#x27;accio come risposta quando i suoi ospiti le chiedono dove andare: la prima grotta di affinamento urbano d&#x27;Europa, alla base del Monte dei Cocci.</p><p>Ci si siede fra le forme di formaggio e si mangia dentro un monumento. Se ci consiglia dalla chat di Airbnb, al suo ospite arriva un buono da 25 dollari, e a lei 15 dollari a prenotazione. Li paga Airbnb.</p><p>I link da mandare sono qui: <a href="https://servizidigitali24srl.github.io/tasteaccio-landing/host/" target="_blank" rel="noopener">https://tasteaccio.it/host</a> <span class="oggi">oggi apre l'anteprima della pagina</span></p><p class="firma">Alessia · 389 583 4072<br>Taste&#x27;accio · Via di Monte Testaccio 91/93, 00153 Roma</p></div>
+ <div class="rev">
+  <div class="scelta"><button class="si">Va bene</button><button class="no">Da cambiare</button></div>
+  <p class="avviso" hidden>Questa mail è cambiata dopo la sua revisione: la rilegga.</p>
+  <div class="cambia" hidden>
+   <label>Cosa non va?<textarea class="commento" rows="3" placeholder="Scriva qui cosa cambierebbe"></textarea></label>
+   <button class="apri">Correggi direttamente il testo</button>
+   <div class="correggi" hidden>
+    <textarea class="nuovo" rows="12" spellcheck="true"></textarea>
+    <div class="modifiche"></div>
+    <button class="ripristina">Torna al testo di partenza</button>
+   </div>
+  </div>
+ </div>
+</article><article class="mail" id="host-B1" data-id="host-B1">
+ <div class="quando">Mail 2 · il giorno dopo · l&#x27;approfondimento</div>
+ <div class="busta"><div class="riga"><span>Oggetto</span><b>tre link</b></div>
+ <div class="riga"><span>Anteprima</span><i>pronti da incollare nel messaggio di benvenuto</i></div></div>
+ <div class="testo"><p>Buongiorno,</p><p>Le propongo un referral già pronto: tre link alle nostre esperienze su Airbnb e un testo scritto in due lingue, da incollare nel messaggio di benvenuto.</p><p>Taste&#x27;accio è la prima grotta di affinamento urbano d&#x27;Europa: gli ospiti che ci manda mangiano dentro un monumento, con il buono da 25 dollari del referral di Airbnb.</p><p>Link e testo sono qui: <a href="https://servizidigitali24srl.github.io/tasteaccio-landing/host/" target="_blank" rel="noopener">https://tasteaccio.it/host</a> <span class="oggi">oggi apre l'anteprima della pagina</span></p><p class="firma">Alessia · 389 583 4072<br>Taste&#x27;accio · Via di Monte Testaccio 91/93, 00153 Roma</p></div>
+ <div class="rev">
+  <div class="scelta"><button class="si">Va bene</button><button class="no">Da cambiare</button></div>
+  <p class="avviso" hidden>Questa mail è cambiata dopo la sua revisione: la rilegga.</p>
+  <div class="cambia" hidden>
+   <label>Cosa non va?<textarea class="commento" rows="3" placeholder="Scriva qui cosa cambierebbe"></textarea></label>
+   <button class="apri">Correggi direttamente il testo</button>
+   <div class="correggi" hidden>
+    <textarea class="nuovo" rows="12" spellcheck="true"></textarea>
+    <div class="modifiche"></div>
+    <button class="ripristina">Torna al testo di partenza</button>
+   </div>
+  </div>
+ </div>
+</article><article class="mail" id="host-B4" data-id="host-B4">
+ <div class="quando">Mail 3 · dopo 4 giorni · l&#x27;invito</div>
+ <div class="busta"><div class="riga"><span>Oggetto</span><b>prima di consigliarci</b></div>
+ <div class="riga"><span>Anteprima</span><i>vede la grotta di persona, su appuntamento</i></div></div>
+ <div class="testo"><p>Buongiorno,</p><p>La invito a vedere la grotta prima di consigliarla: su appuntamento, scende, guarda e decide se è la risposta giusta da dare a chi le chiede dove andare.</p><p>Taste&#x27;accio è la prima grotta di affinamento urbano d&#x27;Europa: gli ospiti che ci manda mangiano dentro un monumento, con il buono da 25 dollari del referral di Airbnb.</p><p>Fissi la visita da qui: <a href="https://servizidigitali24srl.github.io/tasteaccio-landing/host/" target="_blank" rel="noopener">https://tasteaccio.it/host</a> <span class="oggi">oggi apre l'anteprima della pagina</span></p><p class="firma">Alessia · 389 583 4072<br>Taste&#x27;accio · Via di Monte Testaccio 91/93, 00153 Roma</p></div>
+ <div class="rev">
+  <div class="scelta"><button class="si">Va bene</button><button class="no">Da cambiare</button></div>
+  <p class="avviso" hidden>Questa mail è cambiata dopo la sua revisione: la rilegga.</p>
+  <div class="cambia" hidden>
+   <label>Cosa non va?<textarea class="commento" rows="3" placeholder="Scriva qui cosa cambierebbe"></textarea></label>
+   <button class="apri">Correggi direttamente il testo</button>
+   <div class="correggi" hidden>
+    <textarea class="nuovo" rows="12" spellcheck="true"></textarea>
+    <div class="modifiche"></div>
+    <button class="ripristina">Torna al testo di partenza</button>
+   </div>
+  </div>
+ </div>
+</article><article class="mail" id="host-B9" data-id="host-B9">
+ <div class="quando">Mail 4 · dopo 9 giorni · il saluto</div>
+ <div class="busta"><div class="riga"><span>Oggetto</span><b>un posto da consigliare</b></div>
+ <div class="riga"><span>Anteprima</span><i>dove mandare gli ospiti quando le chiedono cosa fare</i></div></div>
+ <div class="testo"><p>Buongiorno,</p><p>È l&#x27;ultima volta che le scrivo: la proposta resta valida, e quando le servirà un posto da consigliare, siamo in via di Monte Testaccio 91/93.</p><p>Taste&#x27;accio è la prima grotta di affinamento urbano d&#x27;Europa: gli ospiti che ci manda mangiano dentro un monumento, con il buono da 25 dollari del referral di Airbnb.</p><p>Trova tutto qui: <a href="https://servizidigitali24srl.github.io/tasteaccio-landing/host/" target="_blank" rel="noopener">https://tasteaccio.it/host</a> <span class="oggi">oggi apre l'anteprima della pagina</span></p><p class="firma">Alessia · 389 583 4072<br>Taste&#x27;accio · Via di Monte Testaccio 91/93, 00153 Roma</p></div>
+ <div class="rev">
+  <div class="scelta"><button class="si">Va bene</button><button class="no">Da cambiare</button></div>
+  <p class="avviso" hidden>Questa mail è cambiata dopo la sua revisione: la rilegga.</p>
+  <div class="cambia" hidden>
+   <label>Cosa non va?<textarea class="commento" rows="3" placeholder="Scriva qui cosa cambierebbe"></textarea></label>
+   <button class="apri">Correggi direttamente il testo</button>
+   <div class="correggi" hidden>
+    <textarea class="nuovo" rows="12" spellcheck="true"></textarea>
+    <div class="modifiche"></div>
+    <button class="ripristina">Torna al testo di partenza</button>
+   </div>
+  </div>
+ </div>
+</article></section><section class="pista"><h3>Pista C · la giornata storta</h3><article class="mail" id="host-C0" data-id="host-C0">
+ <div class="quando">Mail 1 · il primo giorno · la proposta</div>
+ <div class="busta"><div class="riga"><span>Oggetto</span><b>quando piove</b></div>
+ <div class="riga"><span>Anteprima</span><i>un posto al coperto, dentro un monumento</i></div></div>
+ <div class="testo"><p>Buongiorno,</p><p>Le propongo un posto da consigliare ai suoi ospiti quando piove: Taste&#x27;accio, la prima grotta di affinamento urbano d&#x27;Europa, alla base del Monte dei Cocci.</p><p>Ci si siede al coperto fra le forme di formaggio e si mangia dentro un monumento. Se ci consiglia dalla chat di Airbnb, il suo ospite riceve un buono da 25 dollari, e lei 15 dollari a prenotazione. Li paga Airbnb.</p><p>I link da mandare sono qui: <a href="https://servizidigitali24srl.github.io/tasteaccio-landing/host/" target="_blank" rel="noopener">https://tasteaccio.it/host</a> <span class="oggi">oggi apre l'anteprima della pagina</span></p><p class="firma">Alessia · 389 583 4072<br>Taste&#x27;accio · Via di Monte Testaccio 91/93, 00153 Roma</p></div>
+ <div class="rev">
+  <div class="scelta"><button class="si">Va bene</button><button class="no">Da cambiare</button></div>
+  <p class="avviso" hidden>Questa mail è cambiata dopo la sua revisione: la rilegga.</p>
+  <div class="cambia" hidden>
+   <label>Cosa non va?<textarea class="commento" rows="3" placeholder="Scriva qui cosa cambierebbe"></textarea></label>
+   <button class="apri">Correggi direttamente il testo</button>
+   <div class="correggi" hidden>
+    <textarea class="nuovo" rows="12" spellcheck="true"></textarea>
+    <div class="modifiche"></div>
+    <button class="ripristina">Torna al testo di partenza</button>
+   </div>
+  </div>
+ </div>
+</article><article class="mail" id="host-C1" data-id="host-C1">
+ <div class="quando">Mail 2 · il giorno dopo · l&#x27;approfondimento</div>
+ <div class="busta"><div class="riga"><span>Oggetto</span><b>cosa trovano gli ospiti</b></div>
+ <div class="riga"><span>Anteprima</span><i>ogni assaggio con il paese del Lazio da cui arriva</i></div></div>
+ <div class="testo"><p>Buongiorno,</p><p>Da noi si assaggiano formaggi e salumi, e di ognuno si scopre da quale paese del Lazio arriva: è l&#x27;esperienza che le propongo di consigliare a chi viaggia.</p><p>Taste&#x27;accio è la prima grotta di affinamento urbano d&#x27;Europa: gli ospiti che ci manda mangiano dentro un monumento, con il buono da 25 dollari del referral di Airbnb.</p><p>I tre link sono qui: <a href="https://servizidigitali24srl.github.io/tasteaccio-landing/host/" target="_blank" rel="noopener">https://tasteaccio.it/host</a> <span class="oggi">oggi apre l'anteprima della pagina</span></p><p class="firma">Alessia · 389 583 4072<br>Taste&#x27;accio · Via di Monte Testaccio 91/93, 00153 Roma</p></div>
+ <div class="rev">
+  <div class="scelta"><button class="si">Va bene</button><button class="no">Da cambiare</button></div>
+  <p class="avviso" hidden>Questa mail è cambiata dopo la sua revisione: la rilegga.</p>
+  <div class="cambia" hidden>
+   <label>Cosa non va?<textarea class="commento" rows="3" placeholder="Scriva qui cosa cambierebbe"></textarea></label>
+   <button class="apri">Correggi direttamente il testo</button>
+   <div class="correggi" hidden>
+    <textarea class="nuovo" rows="12" spellcheck="true"></textarea>
+    <div class="modifiche"></div>
+    <button class="ripristina">Torna al testo di partenza</button>
+   </div>
+  </div>
+ </div>
+</article><article class="mail" id="host-C4" data-id="host-C4">
+ <div class="quando">Mail 3 · dopo 4 giorni · l&#x27;invito</div>
+ <div class="busta"><div class="riga"><span>Oggetto</span><b>scenda una volta</b></div>
+ <div class="riga"><span>Anteprima</span><i>vede la grotta, e poi sceglie se consigliarla</i></div></div>
+ <div class="testo"><p>Buongiorno,</p><p>La invito a scendere una volta in grotta, su appuntamento: capisce perché ci si sta bene quando fuori piove, e poi sceglie se consigliarla.</p><p>Taste&#x27;accio è la prima grotta di affinamento urbano d&#x27;Europa: gli ospiti che ci manda mangiano dentro un monumento, con il buono da 25 dollari del referral di Airbnb.</p><p>Fissi la visita da qui: <a href="https://servizidigitali24srl.github.io/tasteaccio-landing/host/" target="_blank" rel="noopener">https://tasteaccio.it/host</a> <span class="oggi">oggi apre l'anteprima della pagina</span></p><p class="firma">Alessia · 389 583 4072<br>Taste&#x27;accio · Via di Monte Testaccio 91/93, 00153 Roma</p></div>
+ <div class="rev">
+  <div class="scelta"><button class="si">Va bene</button><button class="no">Da cambiare</button></div>
+  <p class="avviso" hidden>Questa mail è cambiata dopo la sua revisione: la rilegga.</p>
+  <div class="cambia" hidden>
+   <label>Cosa non va?<textarea class="commento" rows="3" placeholder="Scriva qui cosa cambierebbe"></textarea></label>
+   <button class="apri">Correggi direttamente il testo</button>
+   <div class="correggi" hidden>
+    <textarea class="nuovo" rows="12" spellcheck="true"></textarea>
+    <div class="modifiche"></div>
+    <button class="ripristina">Torna al testo di partenza</button>
+   </div>
+  </div>
+ </div>
+</article><article class="mail" id="host-C9" data-id="host-C9">
+ <div class="quando">Mail 4 · dopo 9 giorni · il saluto</div>
+ <div class="busta"><div class="riga"><span>Oggetto</span><b>giornate storte</b></div>
+ <div class="riga"><span>Anteprima</span><i>un posto al coperto da consigliare quando piove</i></div></div>
+ <div class="testo"><p>Buongiorno,</p><p>È l&#x27;ultima mail che le mando: la proposta resta valida, e quando le chiederanno un posto al coperto, siamo in via di Monte Testaccio 91/93.</p><p>Taste&#x27;accio è la prima grotta di affinamento urbano d&#x27;Europa: gli ospiti che ci manda mangiano dentro un monumento, con il buono da 25 dollari del referral di Airbnb.</p><p>Trova tutto qui: <a href="https://servizidigitali24srl.github.io/tasteaccio-landing/host/" target="_blank" rel="noopener">https://tasteaccio.it/host</a> <span class="oggi">oggi apre l'anteprima della pagina</span></p><p class="firma">Alessia · 389 583 4072<br>Taste&#x27;accio · Via di Monte Testaccio 91/93, 00153 Roma</p></div>
+ <div class="rev">
+  <div class="scelta"><button class="si">Va bene</button><button class="no">Da cambiare</button></div>
+  <p class="avviso" hidden>Questa mail è cambiata dopo la sua revisione: la rilegga.</p>
+  <div class="cambia" hidden>
+   <label>Cosa non va?<textarea class="commento" rows="3" placeholder="Scriva qui cosa cambierebbe"></textarea></label>
+   <button class="apri">Correggi direttamente il testo</button>
+   <div class="correggi" hidden>
+    <textarea class="nuovo" rows="12" spellcheck="true"></textarea>
+    <div class="modifiche"></div>
+    <button class="ripristina">Torna al testo di partenza</button>
+   </div>
+  </div>
+ </div>
+</article></section>
+</div>
+</div>
+<div class="barra"><div><span id="conta"></span><button class="verde" id="manda">Manda la revisione</button></div></div>
+<div class="modale" id="modale" hidden><div class="finestra">
+ <button class="chiudi" id="chiudi" aria-label="Chiudi">×</button>
+ <h3>Manda la revisione</h3>
+ <label>Il suo nome<input id="nome" autocomplete="name" placeholder="per sapere chi l'ha rivista"></label>
+ <textarea id="riassunto" rows="12" readonly></textarea>
+ <div class="azioni"><a class="verde" id="wa" target="_blank" rel="noopener">Manda su WhatsApp</a>
+  <a class="verde grigio" id="email">Manda per email</a><button class="verde grigio" id="copia">Copia il testo</button></div>
+ <p class="nota">WhatsApp e la mail le fanno scegliere a chi mandarla.</p>
+</div></div>
+<script>
+const DATI = {"mail": [{"id": "agenzie-A0", "s": "agenzie", "pista": "A", "n": 1, "oggetto": "gruppi a Roma", "anteprima": "una grotta di duemila anni, a Testaccio", "corpo": ["Buongiorno,", "Vi propongo di diventare partner di Taste'accio, la prima grotta di affinamento urbano d'Europa, e di portarci i vostri gruppi.", "Siamo alla base del Monte dei Cocci: i vostri clienti si siedono fra le forme in stagionatura. Sedute ci stanno fino a trentadue persone, e con i gruppi grandi facciamo due turni.", "A Roma i monumenti si visitano; da noi si mangia dentro un monumento.", "Valutate la tappa per i vostri tour: https://tasteaccio.it/agenzie"]}, {"id": "agenzie-A1", "s": "agenzie", "pista": "A", "n": 2, "oggetto": "i produttori", "anteprima": "i paesi e i mestieri dietro ogni assaggio", "corpo": ["Buongiorno,", "Vi propongo una tappa in cui si scopre chi ha fatto quello che si assaggia e da quale paese del Lazio arriva: lo raccontiamo a tavola, in italiano o in inglese.", "Taste'accio è la prima grotta di affinamento urbano d'Europa, alla base del Monte dei Cocci: i vostri clienti mangiano dentro un monumento.", "Guardate se fa per i vostri gruppi: https://tasteaccio.it/agenzie"]}, {"id": "agenzie-A4", "s": "agenzie", "pista": "A", "n": 3, "oggetto": "fam trip", "anteprima": "la degustazione in grotta, prima dei vostri gruppi", "corpo": ["Buongiorno,", "Vi invito a un fam trip qui in grotta, su appuntamento: vi sedete dove si siederebbero i vostri gruppi, assaggiate quello che assaggerebbero loro, e la degustazione la offriamo noi.", "Taste'accio è la prima grotta di affinamento urbano d'Europa, alla base del Monte dei Cocci: i vostri clienti mangiano dentro un monumento.", "Fissate il giorno da qui: https://tasteaccio.it/agenzie"]}, {"id": "agenzie-A9", "s": "agenzie", "pista": "A", "n": 4, "oggetto": "resta valida", "anteprima": "anche fra qualche mese, quando avrete un gruppo a Roma", "corpo": ["Buongiorno,", "È l'ultima volta che vi scrivo: la proposta di diventare nostri partner resta valida anche fra qualche mese, quando avrete un gruppo a Roma.", "Taste'accio è la prima grotta di affinamento urbano d'Europa, alla base del Monte dei Cocci: i vostri clienti mangiano dentro un monumento.", "Trovate tutto qui: https://tasteaccio.it/agenzie"]}, {"id": "agenzie-B0", "s": "agenzie", "pista": "B", "n": 1, "oggetto": "Monte dei Cocci", "anteprima": "cosa c'è sotto il colle di Testaccio", "corpo": ["Buongiorno,", "Vi propongo di diventare partner di Taste'accio e di far entrare i vostri gruppi nel Monte dei Cocci, il colle fatto di frammenti di anfore romane.", "Alla sua base c'è la prima grotta di affinamento urbano d'Europa: i vostri clienti si siedono fra le forme e mangiano dentro un monumento. Sedute ci stanno fino a trentadue persone, e con i gruppi grandi facciamo due turni.", "Valutate la tappa per i vostri tour: https://tasteaccio.it/agenzie"]}, {"id": "agenzie-B1", "s": "agenzie", "pista": "B", "n": 2, "oggetto": "perché lì sotto", "anteprima": "le grotte del colle, le muffe e i formaggi che maturano", "corpo": ["Buongiorno,", "Vi propongo una tappa che ha una storia, e la raccontiamo a tavola: le grotte scavate nel colle sono state per secoli magazzini e cantine, e nella nostra le muffe spontanee delle pareti lavorano le croste dei formaggi.", "Taste'accio è la prima grotta di affinamento urbano d'Europa, alla base del Monte dei Cocci: i vostri clienti mangiano dentro un monumento.", "Guardate se fa per i vostri gruppi: https://tasteaccio.it/agenzie"]}, {"id": "agenzie-B4", "s": "agenzie", "pista": "B", "n": 3, "oggetto": "prima dei gruppi", "anteprima": "un fam trip in grotta, la degustazione la offriamo noi", "corpo": ["Buongiorno,", "Vi invito a un fam trip prima di inserirci nei vostri programmi: su appuntamento, entrate in grotta, vi sedete fra le forme e vedete cosa troverebbero i vostri gruppi. La degustazione la offriamo noi.", "Taste'accio è la prima grotta di affinamento urbano d'Europa, alla base del Monte dei Cocci: i vostri clienti mangiano dentro un monumento.", "Fissate il giorno da qui: https://tasteaccio.it/agenzie"]}, {"id": "agenzie-B9", "s": "agenzie", "pista": "B", "n": 4, "oggetto": "quando vi servirà", "anteprima": "per il vostro prossimo gruppo a Roma", "corpo": ["Buongiorno,", "Non vi scrivo più, ma la proposta di diventare nostri partner resta valida: quando avrete un gruppo a Roma, la tappa dentro il colle è pronta.", "Taste'accio è la prima grotta di affinamento urbano d'Europa, alla base del Monte dei Cocci: i vostri clienti mangiano dentro un monumento.", "Trovate tutto qui: https://tasteaccio.it/agenzie"]}, {"id": "agenzie-C0", "s": "agenzie", "pista": "C", "n": 1, "oggetto": "il Lazio", "anteprima": "i paesi e i produttori, dentro un programma su Roma", "corpo": ["Buongiorno,", "Vi propongo di diventare nostri partner e di portare nei vostri programmi su Roma i piccoli produttori del Lazio, paese per paese.", "Taste'accio è la prima grotta di affinamento urbano d'Europa, alla base del Monte dei Cocci. Sedute ci stanno fino a trentadue persone, e con i gruppi grandi facciamo due turni.", "A Roma i monumenti si visitano; da noi si mangia dentro un monumento.", "Valutate la tappa per i vostri gruppi: https://tasteaccio.it/agenzie"]}, {"id": "agenzie-C1", "s": "agenzie", "pista": "C", "n": 2, "oggetto": "chi c'è dietro", "anteprima": "paesi, mestieri e persone di ogni assaggio", "corpo": ["Buongiorno,", "Vi propongo una tappa in cui dietro ogni assaggio c'è chi l'ha fatto, il casaro, il norcino o il vignaiolo, e il paese del Lazio da cui arriva.", "Taste'accio è la prima grotta di affinamento urbano d'Europa, alla base del Monte dei Cocci: i vostri clienti mangiano dentro un monumento.", "Guardate se fa per i vostri gruppi: https://tasteaccio.it/agenzie"]}, {"id": "agenzie-C4", "s": "agenzie", "pista": "C", "n": 3, "oggetto": "provate la grotta", "anteprima": "su appuntamento, la degustazione la offriamo noi", "corpo": ["Buongiorno,", "Vi invito a provare l'experience prima di proporla: un fam trip in grotta, su appuntamento, con la degustazione offerta da noi. La vivete come la vivrebbe il vostro gruppo.", "Taste'accio è la prima grotta di affinamento urbano d'Europa, alla base del Monte dei Cocci: i vostri clienti mangiano dentro un monumento.", "Fissate il giorno da qui: https://tasteaccio.it/agenzie"]}, {"id": "agenzie-C9", "s": "agenzie", "pista": "C", "n": 4, "oggetto": "resta la tappa", "anteprima": "anche fra qualche mese, per un gruppo a Roma", "corpo": ["Buongiorno,", "Questa è l'ultima mail che vi mando: la proposta di diventare nostri partner resta valida per il prossimo programma su Roma in cui vorrete mettere il Lazio.", "Taste'accio è la prima grotta di affinamento urbano d'Europa, alla base del Monte dei Cocci: i vostri clienti mangiano dentro un monumento.", "Trovate tutto qui: https://tasteaccio.it/agenzie"]}, {"id": "guide-A0", "s": "guide", "pista": "A", "n": 1, "oggetto": "tappa a Testaccio", "anteprima": "a pochi passi dalla Piramide e dal Cimitero acattolico", "corpo": ["Buongiorno,", "Se organizza un'experience su Airbnb o Viator, un food tour o una visita guidata, le propongo Taste'accio come tappa: siamo alla base del Monte dei Cocci, vicino alla Piramide e al Cimitero acattolico.", "Siamo la prima grotta di affinamento urbano d'Europa: il gruppo mangia dentro un monumento. Sedute ci stanno fino a trentadue persone.", "La tappa a tavola è nostra, il tour resta suo.", "Veda se la grotta fa per la sua experience: https://tasteaccio.it/guide"]}, {"id": "guide-A1", "s": "guide", "pista": "A", "n": 2, "oggetto": "intorno a noi", "anteprima": "Piramide, Porta San Paolo, Mercato: tutto a piedi", "corpo": ["Buongiorno,", "Le propongo la nostra grotta per il suo giro a piedi: a poche centinaia di metri ci sono la Piramide, Porta San Paolo, il Cimitero acattolico, il Mercato di Testaccio e l'ex Mattatoio.", "Taste'accio è la prima grotta di affinamento urbano d'Europa: la tappa per la sua experience, in cui il gruppo si siede a mangiare dentro un monumento.", "Guardi dove ci incastriamo: https://tasteaccio.it/guide"]}, {"id": "guide-A4", "s": "guide", "pista": "A", "n": 3, "oggetto": "visiti la grotta", "anteprima": "scende, si guarda intorno e capisce se fa per lei", "corpo": ["Buongiorno,", "La invito a vedere la grotta prima di metterla nel suo giro: su appuntamento, scende, si guarda intorno e capisce subito se fa al caso suo.", "Taste'accio è la prima grotta di affinamento urbano d'Europa: la tappa per la sua experience, in cui il gruppo si siede a mangiare dentro un monumento.", "Fissi la visita da qui: https://tasteaccio.it/guide"]}, {"id": "guide-A9", "s": "guide", "pista": "A", "n": 4, "oggetto": "resta disponibile", "anteprima": "per la sua prossima experience a Testaccio", "corpo": ["Buongiorno,", "È l'ultima volta che le scrivo: la proposta resta aperta, e quando le servirà una sosta nel suo tour, siamo in via di Monte Testaccio 91/93.", "Taste'accio è la prima grotta di affinamento urbano d'Europa: la tappa per la sua experience, in cui il gruppo si siede a mangiare dentro un monumento.", "Trova tutto qui: https://tasteaccio.it/guide"]}, {"id": "guide-B0", "s": "guide", "pista": "B", "n": 1, "oggetto": "sosta a tavola", "anteprima": "si entra da via di Monte Testaccio 91/93", "corpo": ["Buongiorno,", "Le propongo Taste'accio come sosta del suo tour: la prima grotta di affinamento urbano d'Europa, alla base del Monte dei Cocci.", "Ci si siede fra le forme in stagionatura e si mangia dentro un monumento. Sedute ci stanno fino a trentadue persone, e con i gruppi grandi facciamo due turni.", "Il tour resta suo, a tavola pensiamo noi.", "Valuti se fa per il suo gruppo: https://tasteaccio.it/guide"]}, {"id": "guide-B1", "s": "guide", "pista": "B", "n": 2, "oggetto": "formaggio raro", "anteprima": "il Conciato di San Vittore e chi l'ha salvato", "corpo": ["Buongiorno,", "Le propongo una sosta con storie da raccontare, come quella del Conciato di San Vittore: un pecorino dalla crosta conciata con le erbe dei Monti Aurunci, la cui ricetta è stata salvata da Vincenzo Mancino, il nostro fondatore.", "Taste'accio è la prima grotta di affinamento urbano d'Europa: la tappa per la sua experience, in cui il gruppo si siede a mangiare dentro un monumento.", "Guardi com'è fatta la grotta: https://tasteaccio.it/guide"]}, {"id": "guide-B4", "s": "guide", "pista": "B", "n": 3, "oggetto": "prima del gruppo", "anteprima": "viene a vedere la grotta e decide con calma", "corpo": ["Buongiorno,", "La invito a venire a vedere la grotta prima di portarci i suoi clienti: su appuntamento, scende, guarda le forme in affinamento e decide con calma.", "Taste'accio è la prima grotta di affinamento urbano d'Europa: la tappa per la sua experience, in cui il gruppo si siede a mangiare dentro un monumento.", "Fissi la visita da qui: https://tasteaccio.it/guide"]}, {"id": "guide-B9", "s": "guide", "pista": "B", "n": 4, "oggetto": "la sosta resta", "anteprima": "per i suoi prossimi tour a Testaccio", "corpo": ["Buongiorno,", "Non la disturbo più: la sosta per i suoi tour resta disponibile, alla base del colle, in via di Monte Testaccio 91/93.", "Taste'accio è la prima grotta di affinamento urbano d'Europa: la tappa per la sua experience, in cui il gruppo si siede a mangiare dentro un monumento.", "Trova tutto qui: https://tasteaccio.it/guide"]}, {"id": "guide-C0", "s": "guide", "pista": "C", "n": 1, "oggetto": "dentro il colle", "anteprima": "i frammenti di anfore che emergono dalla penombra", "corpo": ["Buongiorno,", "Le propongo di far entrare il suo gruppo nel Monte dei Cocci: alla base del colle c'è Taste'accio, la prima grotta di affinamento urbano d'Europa.", "Il gruppo mangia dentro un monumento, fra le forme in stagionatura, e dalla penombra emergono frammenti di anfore antiche. Sedute ci stanno fino a trentadue persone.", "Il giro resta suo, a tavola pensiamo noi.", "Valuti la tappa per il suo tour: https://tasteaccio.it/guide"]}, {"id": "guide-C1", "s": "guide", "pista": "C", "n": 2, "oggetto": "le anfore", "anteprima": "dal porto sul Tevere al colle di cocci", "corpo": ["Buongiorno,", "Le propongo una sosta in cui raccontiamo noi ai suoi clienti da dove viene il colle: le anfore arrivate al porto sul Tevere con olio e altri alimenti, rotte e accatastate in epoca imperiale.", "Taste'accio è la prima grotta di affinamento urbano d'Europa: la tappa per la sua experience, in cui il gruppo si siede a mangiare dentro un monumento.", "Guardi com'è fatta la grotta: https://tasteaccio.it/guide"]}, {"id": "guide-C4", "s": "guide", "pista": "C", "n": 3, "oggetto": "entri prima", "anteprima": "vede il colle da dentro, poi decide", "corpo": ["Buongiorno,", "La invito a vedere la grotta prima di raccontarla ai suoi clienti: su appuntamento, scende, guarda da vicino i frammenti di anfore antiche e decide se metterla nel suo giro.", "Taste'accio è la prima grotta di affinamento urbano d'Europa: la tappa per la sua experience, in cui il gruppo si siede a mangiare dentro un monumento.", "Fissi la visita da qui: https://tasteaccio.it/guide"]}, {"id": "guide-C9", "s": "guide", "pista": "C", "n": 4, "oggetto": "resto qui", "anteprima": "quando le servirà una sosta nel suo tour", "corpo": ["Buongiorno,", "È l'ultima mail che le mando: la proposta resta aperta, e la sosta per i suoi tour è in via di Monte Testaccio 91/93.", "Taste'accio è la prima grotta di affinamento urbano d'Europa: la tappa per la sua experience, in cui il gruppo si siede a mangiare dentro un monumento.", "Trova tutto qui: https://tasteaccio.it/guide"]}, {"id": "eventi-A0", "s": "eventi", "pista": "A", "n": 1, "oggetto": "location a Roma", "anteprima": "una grotta di duemila anni, a Testaccio", "corpo": ["Buongiorno,", "Vi propongo la nostra location per i vostri eventi a Roma: Taste'accio, la prima grotta di affinamento urbano d'Europa, alla base del Monte dei Cocci.", "A differenza di una sala, qui l'attività non va aggiunta: c'è già. Gli ospiti mangiano dentro un monumento, fra le forme in stagionatura, e ascoltano la storia di quello che assaggiano. Sedute ci stanno fino a trentadue persone.", "Valutate la location per il vostro prossimo evento: https://tasteaccio.it/eventi"]}, {"id": "eventi-A1", "s": "eventi", "pista": "A", "n": 2, "oggetto": "quattro occasioni", "anteprima": "cena di Natale, team building, congressi, produttori", "corpo": ["Buongiorno,", "La nostra location si presta a quattro occasioni, e ve le propongo tutte: la cena di Natale, il team building con «Arte del Tagliere», la serata dei partecipanti a un congresso e l'incontro con un produttore.", "Taste'accio è la prima grotta di affinamento urbano d'Europa, alla base del Monte dei Cocci: una location che è già l'esperienza, dove i vostri ospiti mangiano dentro un monumento.", "Scegliete l'occasione da qui: https://tasteaccio.it/eventi"]}, {"id": "eventi-A4", "s": "eventi", "pista": "A", "n": 3, "oggetto": "il sopralluogo", "anteprima": "entrate e capite cosa vivrebbero i partecipanti", "corpo": ["Buongiorno,", "Vi invito a un sopralluogo con assaggio, su appuntamento: vi sedete fra le forme e capite cosa vivrebbero i partecipanti.", "Taste'accio è la prima grotta di affinamento urbano d'Europa, alla base del Monte dei Cocci: una location che è già l'esperienza, dove i vostri ospiti mangiano dentro un monumento.", "Fissate il sopralluogo da qui: https://tasteaccio.it/eventi"]}, {"id": "eventi-A9", "s": "eventi", "pista": "A", "n": 4, "oggetto": "la location resta", "anteprima": "per il vostro prossimo evento a Roma", "corpo": ["Buongiorno,", "Non vi scrivo più, ma la proposta resta valida: quando avrete un evento a Roma, vi aspettiamo in via di Monte Testaccio 91/93.", "Taste'accio è la prima grotta di affinamento urbano d'Europa, alla base del Monte dei Cocci: una location che è già l'esperienza, dove i vostri ospiti mangiano dentro un monumento.", "Trovate tutto qui: https://tasteaccio.it/eventi"]}, {"id": "eventi-B0", "s": "eventi", "pista": "B", "n": 1, "oggetto": "team building", "anteprima": "ognuno compone il suo tagliere, e se lo mangia", "corpo": ["Buongiorno,", "Vi propongo un team building dentro Taste'accio, la prima grotta di affinamento urbano d'Europa, alla base del Monte dei Cocci: «Arte del Tagliere», in cui i partecipanti imparano a tagliare e abbinare i formaggi e compongono il proprio tagliere.", "Al vostro cliente portate location e attività insieme: si mangia dentro un monumento. Sedute ci stanno fino a trentadue persone, e con i gruppi grandi facciamo due turni.", "Guardate se fa al caso vostro: https://tasteaccio.it/eventi"]}, {"id": "eventi-B1", "s": "eventi", "pista": "B", "n": 2, "oggetto": "passo per passo", "anteprima": "cosa fanno i partecipanti, dal taglio al tagliere", "corpo": ["Buongiorno,", "Vi propongo «Arte del Tagliere» per il vostro prossimo team building: si parte dalle forme in stagionatura, si impara a tagliarle e ad abbinarle, poi ognuno compone il suo tagliere e lo assaggia.", "Taste'accio è la prima grotta di affinamento urbano d'Europa, alla base del Monte dei Cocci: una location che è già l'esperienza, dove i vostri ospiti mangiano dentro un monumento.", "Guardate se fa per la vostra proposta: https://tasteaccio.it/eventi"]}, {"id": "eventi-B4", "s": "eventi", "pista": "B", "n": 3, "oggetto": "prima del preventivo", "anteprima": "vedete dove si svolge l'attività e assaggiate", "corpo": ["Buongiorno,", "Vi invito a un sopralluogo con assaggio, su appuntamento, prima di mettere «Arte del Tagliere» in un preventivo: vedete dove si svolge l'attività, assaggiate e capite se funziona per il vostro cliente.", "Taste'accio è la prima grotta di affinamento urbano d'Europa, alla base del Monte dei Cocci: una location che è già l'esperienza, dove i vostri ospiti mangiano dentro un monumento.", "Fissate il sopralluogo da qui: https://tasteaccio.it/eventi"]}, {"id": "eventi-B9", "s": "eventi", "pista": "B", "n": 4, "oggetto": "resta l'attività", "anteprima": "«Arte del Tagliere», quando al cliente servirà", "corpo": ["Buongiorno,", "Questa è l'ultima mail che vi mando: quando al vostro cliente servirà un team building fuori da una sala riunioni, la proposta di «Arte del Tagliere» resta valida.", "Taste'accio è la prima grotta di affinamento urbano d'Europa, alla base del Monte dei Cocci: una location che è già l'esperienza, dove i vostri ospiti mangiano dentro un monumento.", "Trovate tutto qui: https://tasteaccio.it/eventi"]}, {"id": "eventi-C0", "s": "eventi", "pista": "C", "n": 1, "oggetto": "cena di Natale", "anteprima": "alla base del Monte dei Cocci, a Testaccio", "corpo": ["Buongiorno,", "Vi propongo la nostra location per la cena di Natale dei vostri clienti: Taste'accio, la prima grotta di affinamento urbano d'Europa, alla base del Monte dei Cocci.", "Qui l'attività non va aggiunta: gli ospiti mangiano dentro un monumento, fra le forme in stagionatura, e assaggiano i formaggi che maturano lì. Sedute ci stanno fino a trentadue persone: conviene fissare la data per tempo.", "Tenete presente la grotta per dicembre: https://tasteaccio.it/eventi"]}, {"id": "eventi-C1", "s": "eventi", "pista": "C", "n": 2, "oggetto": "per dicembre", "anteprima": "cosa mettere in una proposta di Natale", "corpo": ["Buongiorno,", "Vi propongo quattro modi di usare la location a dicembre: la degustazione con la visita della grotta, l'abbinamento con i vini del Lazio, «Arte del Tagliere» e il percorso sugli oli. Con i gruppi grandi facciamo due turni.", "Taste'accio è la prima grotta di affinamento urbano d'Europa, alla base del Monte dei Cocci: una location che è già l'esperienza, dove i vostri ospiti mangiano dentro un monumento.", "Scegliete il formato da qui: https://tasteaccio.it/eventi"]}, {"id": "eventi-C4", "s": "eventi", "pista": "C", "n": 3, "oggetto": "sopralluogo per dicembre", "anteprima": "entrate, guardate i tavoli e decidete", "corpo": ["Buongiorno,", "Vi invito a un sopralluogo con assaggio, su appuntamento, prima di offrire la location ai vostri clienti per dicembre: entrate, guardate i tavoli e capite subito se c'è spazio per la loro cena.", "Taste'accio è la prima grotta di affinamento urbano d'Europa, alla base del Monte dei Cocci: una location che è già l'esperienza, dove i vostri ospiti mangiano dentro un monumento.", "Fissate il sopralluogo da qui: https://tasteaccio.it/eventi"]}, {"id": "eventi-C9", "s": "eventi", "pista": "C", "n": 4, "oggetto": "posti a dicembre", "anteprima": "la data della cena di Natale, da fissare per tempo", "corpo": ["Buongiorno,", "È l'ultima mail che vi mando: se volete la location per una cena di Natale, vi propongo di fissare la data per tempo. Sedute ci stanno fino a trentadue persone.", "Taste'accio è la prima grotta di affinamento urbano d'Europa, alla base del Monte dei Cocci: una location che è già l'esperienza, dove i vostri ospiti mangiano dentro un monumento.", "Scegliete la data da qui: https://tasteaccio.it/eventi"]}, {"id": "host-A0", "s": "host", "pista": "A", "n": 1, "oggetto": "regalo agli ospiti", "anteprima": "a pagare è Airbnb, non lei e non noi", "corpo": ["Buongiorno,", "Le propongo un referral che non le costa niente: quando consiglia un'esperienza dalla chat di Airbnb, il suo ospite riceve un buono da 25 dollari, e lei 15 dollari a prenotazione. A pagare è Airbnb.", "Siamo Taste'accio, la prima grotta di affinamento urbano d'Europa, alla base del Monte dei Cocci: gli ospiti che ci manda si siedono fra le forme di formaggio e mangiano dentro un monumento.", "I link da mandare sono qui: https://tasteaccio.it/host"]}, {"id": "host-A1", "s": "host", "pista": "A", "n": 2, "oggetto": "una volta sola", "anteprima": "Messaggi, impostazioni, risposte rapide", "corpo": ["Buongiorno,", "Le propongo di impostare il referral: si fa una volta sola. Su Airbnb, da Messaggi, apre le impostazioni, sceglie «Gestisci le risposte rapide» e crea un messaggio con i nostri link. Poi lo manda con un tocco a chi arriva.", "Taste'accio è la prima grotta di affinamento urbano d'Europa: gli ospiti che ci manda mangiano dentro un monumento, con il buono da 25 dollari del referral di Airbnb.", "Il testo pronto è qui: https://tasteaccio.it/host"]}, {"id": "host-A4", "s": "host", "pista": "A", "n": 3, "oggetto": "veda la grotta", "anteprima": "prima di consigliarla, su appuntamento", "corpo": ["Buongiorno,", "La invito a vedere la grotta prima di consigliarla: su appuntamento, scende, si guarda intorno e decide se è il posto da mettere nel messaggio di benvenuto.", "Taste'accio è la prima grotta di affinamento urbano d'Europa: gli ospiti che ci manda mangiano dentro un monumento, con il buono da 25 dollari del referral di Airbnb.", "Fissi la visita da qui: https://tasteaccio.it/host"]}, {"id": "host-A9", "s": "host", "pista": "A", "n": 4, "oggetto": "la proposta resta valida", "anteprima": "per quando vorrà consigliarci a chi arriva", "corpo": ["Buongiorno,", "Non la disturbo più: la proposta resta valida, e quando vorrà consigliarci, siamo in via di Monte Testaccio 91/93.", "Taste'accio è la prima grotta di affinamento urbano d'Europa: gli ospiti che ci manda mangiano dentro un monumento, con il buono da 25 dollari del referral di Airbnb.", "Trova tutto qui: https://tasteaccio.it/host"]}, {"id": "host-B0", "s": "host", "pista": "B", "n": 1, "oggetto": "cosa fare", "anteprima": "una risposta diversa dal Colosseo, per i suoi ospiti", "corpo": ["Buongiorno,", "Le propongo Taste'accio come risposta quando i suoi ospiti le chiedono dove andare: la prima grotta di affinamento urbano d'Europa, alla base del Monte dei Cocci.", "Ci si siede fra le forme di formaggio e si mangia dentro un monumento. Se ci consiglia dalla chat di Airbnb, al suo ospite arriva un buono da 25 dollari, e a lei 15 dollari a prenotazione. Li paga Airbnb.", "I link da mandare sono qui: https://tasteaccio.it/host"]}, {"id": "host-B1", "s": "host", "pista": "B", "n": 2, "oggetto": "tre link", "anteprima": "pronti da incollare nel messaggio di benvenuto", "corpo": ["Buongiorno,", "Le propongo un referral già pronto: tre link alle nostre esperienze su Airbnb e un testo scritto in due lingue, da incollare nel messaggio di benvenuto.", "Taste'accio è la prima grotta di affinamento urbano d'Europa: gli ospiti che ci manda mangiano dentro un monumento, con il buono da 25 dollari del referral di Airbnb.", "Link e testo sono qui: https://tasteaccio.it/host"]}, {"id": "host-B4", "s": "host", "pista": "B", "n": 3, "oggetto": "prima di consigliarci", "anteprima": "vede la grotta di persona, su appuntamento", "corpo": ["Buongiorno,", "La invito a vedere la grotta prima di consigliarla: su appuntamento, scende, guarda e decide se è la risposta giusta da dare a chi le chiede dove andare.", "Taste'accio è la prima grotta di affinamento urbano d'Europa: gli ospiti che ci manda mangiano dentro un monumento, con il buono da 25 dollari del referral di Airbnb.", "Fissi la visita da qui: https://tasteaccio.it/host"]}, {"id": "host-B9", "s": "host", "pista": "B", "n": 4, "oggetto": "un posto da consigliare", "anteprima": "dove mandare gli ospiti quando le chiedono cosa fare", "corpo": ["Buongiorno,", "È l'ultima volta che le scrivo: la proposta resta valida, e quando le servirà un posto da consigliare, siamo in via di Monte Testaccio 91/93.", "Taste'accio è la prima grotta di affinamento urbano d'Europa: gli ospiti che ci manda mangiano dentro un monumento, con il buono da 25 dollari del referral di Airbnb.", "Trova tutto qui: https://tasteaccio.it/host"]}, {"id": "host-C0", "s": "host", "pista": "C", "n": 1, "oggetto": "quando piove", "anteprima": "un posto al coperto, dentro un monumento", "corpo": ["Buongiorno,", "Le propongo un posto da consigliare ai suoi ospiti quando piove: Taste'accio, la prima grotta di affinamento urbano d'Europa, alla base del Monte dei Cocci.", "Ci si siede al coperto fra le forme di formaggio e si mangia dentro un monumento. Se ci consiglia dalla chat di Airbnb, il suo ospite riceve un buono da 25 dollari, e lei 15 dollari a prenotazione. Li paga Airbnb.", "I link da mandare sono qui: https://tasteaccio.it/host"]}, {"id": "host-C1", "s": "host", "pista": "C", "n": 2, "oggetto": "cosa trovano gli ospiti", "anteprima": "ogni assaggio con il paese del Lazio da cui arriva", "corpo": ["Buongiorno,", "Da noi si assaggiano formaggi e salumi, e di ognuno si scopre da quale paese del Lazio arriva: è l'esperienza che le propongo di consigliare a chi viaggia.", "Taste'accio è la prima grotta di affinamento urbano d'Europa: gli ospiti che ci manda mangiano dentro un monumento, con il buono da 25 dollari del referral di Airbnb.", "I tre link sono qui: https://tasteaccio.it/host"]}, {"id": "host-C4", "s": "host", "pista": "C", "n": 3, "oggetto": "scenda una volta", "anteprima": "vede la grotta, e poi sceglie se consigliarla", "corpo": ["Buongiorno,", "La invito a scendere una volta in grotta, su appuntamento: capisce perché ci si sta bene quando fuori piove, e poi sceglie se consigliarla.", "Taste'accio è la prima grotta di affinamento urbano d'Europa: gli ospiti che ci manda mangiano dentro un monumento, con il buono da 25 dollari del referral di Airbnb.", "Fissi la visita da qui: https://tasteaccio.it/host"]}, {"id": "host-C9", "s": "host", "pista": "C", "n": 4, "oggetto": "giornate storte", "anteprima": "un posto al coperto da consigliare quando piove", "corpo": ["Buongiorno,", "È l'ultima mail che le mando: la proposta resta valida, e quando le chiederanno un posto al coperto, siamo in via di Monte Testaccio 91/93.", "Taste'accio è la prima grotta di affinamento urbano d'Europa: gli ospiti che ci manda mangiano dentro un monumento, con il buono da 25 dollari del referral di Airbnb.", "Trova tutto qui: https://tasteaccio.it/host"]}], "settori": [{"slug": "agenzie", "nome": "Agenzie e tour operator"}, {"slug": "guide", "nome": "Guide del Lazio"}, {"slug": "eventi", "nome": "Eventi, congressi, MICE"}, {"slug": "host", "nome": "B&B e guest house"}], "versione": "28/09/2026 13:32 · 1501b5"};
+const PER_ID = Object.fromEntries(DATI.mail.map(m => [m.id, m]));
+const CHIAVE = "revisione-mail-tasteaccio";
+let stato = {};
+try { stato = JSON.parse(localStorage.getItem(CHIAVE) || "{}") || {}; } catch (err) { stato = {}; }
+try { document.getElementById("nome").value = localStorage.getItem(CHIAVE + "-nome") || ""; } catch (err) {}
+function salva() { try { localStorage.setItem(CHIAVE, JSON.stringify(stato)); } catch (err) {} conta(); }
+const testoDi = m => "Oggetto: " + m.oggetto + "\nAnteprima: " + m.anteprima + "\n\n" + m.corpo.join("\n\n");
+function impronta(s) { let h = 5381; for (const c of s) h = ((h << 5) + h + c.codePointAt(0)) | 0; return (h >>> 0).toString(36); }
+const esc = t => String(t).replace(/[&<>]/g, c => ({"&": "&amp;", "<": "&lt;", ">": "&gt;"})[c]);
+
+function differenze(a, b) {
+  const A = a.split(/(\s+)/), B = b.split(/(\s+)/), n = A.length, m = B.length;
+  const L = Array.from({length: n + 1}, () => new Uint16Array(m + 1));
+  for (let i = n - 1; i >= 0; i--) for (let j = m - 1; j >= 0; j--)
+    L[i][j] = A[i] === B[j] ? L[i + 1][j + 1] + 1 : Math.max(L[i + 1][j], L[i][j + 1]);
+  const out = []; let i = 0, j = 0;
+  const metti = (t, x) => { if (out.length && out[out.length - 1][0] === t) out[out.length - 1][1] += x; else out.push([t, x]); };
+  while (i < n && j < m) {
+    if (A[i] === B[j]) { metti("=", A[i]); i++; j++; }
+    else if (L[i + 1][j] >= L[i][j + 1]) metti("-", A[i++]); else metti("+", B[j++]);
+  }
+  while (i < n) metti("-", A[i++]); while (j < m) metti("+", B[j++]);
+  return out.map(([t, x]) => t === "=" ? esc(x) : t === "-" ? "<del>" + esc(x) + "</del>" : "<ins>" + esc(x) + "</ins>").join("");
+}
+
+function mostra(el) {
+  const id = el.dataset.id, m = PER_ID[id], r = stato[id] || {};
+  el.classList.toggle("ok", r.v === "ok"); el.classList.toggle("no", r.v === "no");
+  el.querySelector(".cambia").hidden = r.v !== "no";
+  el.querySelector(".avviso").hidden = !(r.v && r.h && r.h !== impronta(testoDi(m)));
+  const c = el.querySelector(".commento"); if (document.activeElement !== c) c.value = r.c || "";
+  const box = el.querySelector(".correggi"), nuovo = el.querySelector(".nuovo"), mod = el.querySelector(".modifiche");
+  box.hidden = !(r.v === "no" && r.t !== undefined);
+  if (!box.hidden) {
+    if (document.activeElement !== nuovo) nuovo.value = r.t;
+    mod.innerHTML = r.t.trim() === testoDi(m).trim() ? "" : "<b>Le sue correzioni</b>" + differenze(testoDi(m), r.t);
+  }
+}
+function tocca(id, cambia) { stato[id] = Object.assign(stato[id] || {}, cambia, {h: impronta(testoDi(PER_ID[id]))}); salva(); mostra(document.getElementById(id)); }
+
+document.querySelectorAll(".mail").forEach(el => {
+  const id = el.dataset.id;
+  el.querySelector(".si").onclick = () => tocca(id, {v: (stato[id] || {}).v === "ok" ? undefined : "ok"});
+  el.querySelector(".no").onclick = () => tocca(id, {v: (stato[id] || {}).v === "no" ? undefined : "no"});
+  el.querySelector(".commento").oninput = ev => tocca(id, {c: ev.target.value});
+  el.querySelector(".apri").onclick = () => { if ((stato[id] || {}).t === undefined) tocca(id, {t: testoDi(PER_ID[id])}); el.querySelector(".nuovo").focus(); };
+  el.querySelector(".nuovo").oninput = ev => tocca(id, {t: ev.target.value});
+  el.querySelector(".ripristina").onclick = () => { const r = stato[id] || {}; delete r.t; stato[id] = r; salva(); mostra(el); };
+  mostra(el);
+});
+
+function conta() {
+  const fatte = DATI.mail.filter(m => (stato[m.id] || {}).v).length;
+  document.getElementById("conta").textContent = "Riviste " + fatte + " su " + DATI.mail.length;
+  for (const s of DATI.settori) {
+    const sue = DATI.mail.filter(m => m.s === s.slug);
+    document.querySelector('[data-conta="' + s.slug + '"]').textContent = sue.filter(m => (stato[m.id] || {}).v).length + "/" + sue.length;
+  }
+}
+
+function apriScheda(slug) {
+  if (!DATI.settori.some(s => s.slug === slug)) slug = DATI.settori[0].slug;
+  document.querySelectorAll(".settore").forEach(d => d.hidden = d.dataset.s !== slug);
+  document.querySelectorAll(".scheda").forEach(b => b.classList.toggle("attiva", b.dataset.s === slug));
+}
+document.querySelectorAll(".scheda").forEach(b => b.onclick = () => { history.replaceState(null, "", "#" + b.dataset.s); apriScheda(b.dataset.s); window.scrollTo({top: 0}); });
+apriScheda((location.hash || "").slice(1).split("-")[0]);
+if (location.hash.length > 1 && document.getElementById(location.hash.slice(1))) document.getElementById(location.hash.slice(1)).scrollIntoView();
+
+function riassunto() {
+  const nome = document.getElementById("nome").value.trim();
+  const righe = [], quante = {ok: 0, no: 0};
+  for (const s of DATI.settori) {
+    const sue = DATI.mail.filter(m => m.s === s.slug && (stato[m.id] || {}).v);
+    if (!sue.length) continue;
+    righe.push("", s.nome.toUpperCase());
+    for (const m of sue) {
+      const r = stato[m.id], dove = "Pista " + m.pista + ", mail " + m.n + " («" + m.oggetto + "»)";
+      quante[r.v]++;
+      if (r.v === "ok") { righe.push("- " + dove + ": va bene"); continue; }
+      righe.push("- " + dove + ": DA CAMBIARE");
+      if (r.h && r.h !== impronta(testoDi(m))) righe.push("  (rivista su una versione precedente)");
+      if ((r.c || "").trim()) righe.push("  Cosa non va: " + r.c.trim());
+      if (r.t !== undefined && r.t.trim() !== testoDi(m).trim()) {
+        const prima = testoDi(m).split("\n").filter(x => x.trim()), dopo = r.t.split("\n").filter(x => x.trim());
+        if (prima.length === dopo.length) {
+          prima.forEach((x, i) => { if (x.trim() !== dopo[i].trim()) righe.push("  prima: " + x.trim(), "  dopo:  " + dopo[i].trim()); });
+        } else righe.push("  Testo corretto:", ...dopo.map(x => "  " + x.trim()));
+      }
+    }
+  }
+  const testa = ["Revisione delle mail di Taste'accio" + (nome ? ", di " + nome : ""),
+                 "Riviste " + (quante.ok + quante.no) + " su " + DATI.mail.length + ": " + quante.ok + " vanno bene, " + quante.no + " da cambiare",
+                 "Versione del testo: " + DATI.versione];
+  return testa.concat(righe).join("\n");
+}
+function aggiornaInvio() {
+  const t = riassunto();
+  document.getElementById("riassunto").value = t;
+  document.getElementById("wa").href = "https://wa.me/?text=" + encodeURIComponent(t);
+  document.getElementById("email").href = "mailto:?subject=" + encodeURIComponent("Revisione delle mail di Taste'accio") + "&body=" + encodeURIComponent(t);
+}
+const M = document.getElementById("modale");
+document.getElementById("manda").onclick = () => { aggiornaInvio(); M.hidden = false; };
+document.getElementById("chiudi").onclick = () => M.hidden = true;
+M.addEventListener("click", ev => { if (ev.target === M) M.hidden = true; });
+document.getElementById("nome").oninput = ev => { try { localStorage.setItem(CHIAVE + "-nome", ev.target.value); } catch (err) {} aggiornaInvio(); };
+document.getElementById("copia").onclick = async ev => {
+  try { await navigator.clipboard.writeText(document.getElementById("riassunto").value); ev.target.textContent = "Copiato"; }
+  catch (err) { const a = document.getElementById("riassunto"); a.removeAttribute("readonly"); a.select(); document.execCommand("copy"); a.setAttribute("readonly", ""); ev.target.textContent = "Copiato"; }
+  setTimeout(() => ev.target.textContent = "Copia il testo", 1800);
+};
+conta();
+</script>
+</body></html>
