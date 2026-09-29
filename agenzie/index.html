@@ -17,131 +17,122 @@
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Playfair+Display:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
 <style>
-:root{--rame:#985030;--rame-scuro:#6e3a22;--crema:#f4ebc4;--carta:#fbf8f2;--nero:#1c1917;--grigio:#6f6a64;--verde-wa:#1f8f4e}
+:root{--rame:#985030;--rame-scuro:#6e3a22;--crema:#f4ebc4;--carta:#fbf8f2;--nero:#1c1917;--grigio:#6f6a64;--linea:#eadfcd;--verde-wa:#1f8f4e}
 *{box-sizing:border-box}
+[hidden]{display:none!important}
 html{scroll-behavior:smooth}
-body{margin:0;background:var(--carta);color:var(--nero);font:16px/1.6 "Open Sans",Helvetica,Arial,sans-serif}
-a{color:var(--rame)}
-.pagina{max-width:1080px;margin:0 auto;background:var(--carta)}
-.testata{padding:14px 18px;display:flex;justify-content:center;border-bottom:1px solid #ece4d6}
-.testata img{height:92px;width:92px;border-radius:50%}
-.hero{position:relative;min-height:560px;display:flex;flex-direction:column;justify-content:flex-end;gap:14px;padding:28px 22px 32px;color:#fff;
- background:linear-gradient(180deg,rgba(0,0,0,.05) 0%,rgba(0,0,0,.28) 40%,rgba(20,12,8,.88) 100%),var(--foto) center/cover no-repeat}
-.hero .etichetta{font-size:12.5px;letter-spacing:1px;text-transform:uppercase;font-weight:700;color:var(--crema)}
-.hero h1{font:700 32px/1.18 "Playfair Display",serif;margin:0;max-width:720px}
-.hero p{margin:0;max-width:640px;font-size:16.5px;line-height:1.55;color:#f3ede4}
+body{margin:0;background:var(--carta);color:var(--nero);font:17px/1.6 "Open Sans",Helvetica,Arial,sans-serif;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+.testa{display:flex;justify-content:center;padding:12px 16px;background:var(--carta)}
+.testa img{height:78px;width:78px;border-radius:50%}
+.hero{position:relative;min-height:88vh;display:flex;align-items:flex-end;color:#fff;
+ background:linear-gradient(180deg,rgba(0,0,0,.08) 0%,rgba(0,0,0,.30) 38%,rgba(20,12,8,.90) 100%),var(--foto) center/cover no-repeat}
+.hero-dentro{width:100%;max-width:1080px;margin:0 auto;padding:32px 22px 36px;display:flex;flex-direction:column;gap:16px}
+.etichetta{font-size:12.5px;letter-spacing:1.2px;text-transform:uppercase;font-weight:700;color:var(--crema)}
+.hero h1{font:700 34px/1.14 "Playfair Display",Georgia,serif;margin:0;max-width:760px}
+.sotto{margin:0;max-width:620px;font-size:17px;line-height:1.55;color:#f3ede4}
+.nota{font-size:13.5px;color:#e9e1d4}
 .bottone{display:inline-flex;align-items:center;gap:10px;background:var(--verde-wa);color:#fff;text-decoration:none;font-weight:700;
- border-radius:12px;padding:14px 20px;font-size:16px;line-height:1.3;box-shadow:0 6px 18px rgba(0,0,0,.18)}
+ border-radius:14px;padding:15px 22px;font-size:16.5px;line-height:1.3;box-shadow:0 8px 22px rgba(0,0,0,.18);border:0;cursor:pointer;font-family:inherit}
 .bottone svg{width:22px;height:22px;flex:none}
 .bottone.chiaro{background:#fff;color:var(--rame-scuro);box-shadow:none;border:1.5px solid var(--rame)}
-.nota{font-size:13px;color:#e9e1d4}
-.sezione{padding:40px 22px}
-.sezione h2{font:700 26px/1.25 "Playfair Display",serif;margin:0 0 14px}
-.due{display:grid;grid-template-columns:1fr;gap:20px}
-.foto2{width:100%;aspect-ratio:3/2;object-fit:cover;border-radius:12px;display:block}
-.fatti{display:grid;grid-template-columns:1fr;gap:10px;margin-top:20px}
-.fatto{background:var(--crema);border-radius:10px;padding:12px 14px;font-size:14px}
-.fatto b{display:block;font:700 19px "Playfair Display",serif;color:var(--rame)}
-.settore{background:#fff;border-top:3px solid var(--rame)}
-.voce{padding:16px 0;border-bottom:1px solid #eee3d0}
-.voce:last-child{border:0}
-.voce h3{font:700 18px/1.3 "Open Sans",sans-serif;margin:0 0 6px}
-.voce p{margin:0 0 10px}
-.scelte{display:flex;flex-wrap:wrap;gap:8px;margin-top:4px}
-.scelte a{display:inline-block;border:1.5px solid var(--rame);color:var(--rame-scuro);border-radius:999px;padding:7px 14px;text-decoration:none;font-size:14.5px}
-.riga-link{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin:8px 0}
-.riga-link span{flex:1 1 220px}
-.copia{background:none;border:1.5px solid var(--rame);color:var(--rame);border-radius:8px;padding:6px 12px;font:600 13.5px "Open Sans";cursor:pointer}
-.copia.fatto-ok{background:var(--rame);color:#fff}
-.testo-pronto{background:var(--carta);border:1px solid #eadfcd;border-radius:10px;padding:12px 14px;margin:8px 0;font-size:14.5px}
-.testo-pronto b{display:block;font-size:12.5px;text-transform:uppercase;letter-spacing:.6px;color:var(--grigio);margin-bottom:4px}
-.testo-pronto .pronto{white-space:pre-line;overflow-wrap:anywhere}
-.galleria{display:grid;grid-template-columns:1fr;gap:10px;margin-top:18px}
-.galleria img{width:100%;aspect-ratio:3/2;object-fit:cover;border-radius:10px;display:block}
-.recensioni{background:var(--carta)}
-.conta{font-size:14px;color:var(--grigio);margin:-6px 0 16px}
-.schede{display:grid;grid-template-columns:1fr;gap:12px}
-.scheda{background:#fff;border:1px solid #eadfcd;border-radius:12px;padding:16px 16px 12px}
+.blocco{max-width:1080px;margin:0 auto;padding:56px 22px}
+.blocco h2{font:700 28px/1.2 "Playfair Display",Georgia,serif;margin:0 0 22px}
+.carte{display:grid;grid-template-columns:1fr;gap:14px}
+.carta{background:#fff;border:1px solid var(--linea);border-radius:16px;padding:20px 20px 18px}
+.carta h3{font:700 20px/1.25 "Playfair Display",Georgia,serif;color:var(--rame);margin:0 0 8px}
+.carta p{margin:0;font-size:16px;color:#3b3632}
+.striscia{max-width:1080px;margin:0 auto;padding:0 22px;display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.striscia img{width:100%;height:100%;aspect-ratio:4/3;object-fit:cover;border-radius:14px}
+.striscia img:first-child{grid-column:1/-1;aspect-ratio:16/9}
+.passi{list-style:none;margin:0 0 26px;padding:0;display:grid;grid-template-columns:1fr;gap:18px}
+.passi li{display:flex;gap:16px;align-items:flex-start}
+.passi .num{flex:none;width:40px;height:40px;border-radius:50%;background:var(--rame);color:#fff;display:flex;align-items:center;justify-content:center;font:700 18px "Playfair Display",Georgia,serif}
+.passi h3{margin:4px 0 4px;font-size:18px}
+.passi p{margin:0;font-size:16px;color:#3b3632}
+.fondo-bianco{background:#fff;border-top:1px solid var(--linea);border-bottom:1px solid var(--linea)}
+.luoghi{list-style:none;margin:0;padding:0;background:#fff;border:1px solid var(--linea);border-radius:16px}
+.luoghi li{display:flex;justify-content:space-between;gap:12px;padding:14px 18px;border-bottom:1px solid #f1e8d8;font-size:16.5px}
+.luoghi li:last-child{border:0}
+.luoghi b{color:var(--rame);white-space:nowrap}
+.piccolo{font-size:14px;color:var(--grigio);margin:12px 0 0}
+.natale{background:var(--crema);border-radius:12px;padding:12px 16px;margin:0 0 20px;font-size:16px}
+.gruppo{margin:0 0 18px}
+.gruppo .lab{display:block;font-size:13px;letter-spacing:.6px;text-transform:uppercase;color:var(--grigio);font-weight:700;margin-bottom:8px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{border:1.5px solid var(--rame);background:#fff;color:var(--rame-scuro);border-radius:999px;padding:8px 14px;font:600 15px "Open Sans",Helvetica,Arial,sans-serif;cursor:pointer}
+.chip[aria-pressed="true"]{background:var(--rame);color:#fff}
+.lingue{display:flex;gap:8px;margin:0 0 12px}
+.bolla{background:#fff;border:1px solid var(--linea);border-radius:18px 18px 18px 4px;padding:16px 18px;margin:0 0 16px;font-size:16px;white-space:pre-line;box-shadow:0 6px 18px rgba(0,0,0,.05)}
+.bolla .link{display:inline-block;background:#f1e8d8;color:var(--rame-scuro);border-radius:999px;padding:0 10px;font-size:13.5px;font-weight:600;white-space:nowrap}
+.recensioni .schede{display:grid;grid-template-columns:1fr;gap:14px}
+.scheda{background:#fff;border:1px solid var(--linea);border-radius:16px;padding:18px 18px 14px}
 .stelle{color:#d49a2a;letter-spacing:2px;font-size:14px}
-.scheda p{margin:6px 0 10px;font-size:15px;line-height:1.55}
+.scheda p{margin:6px 0 10px;font-size:15.5px;line-height:1.55}
 .scheda .chi{font-size:13px;color:var(--grigio)}
-.leggi{display:inline-block;margin-top:16px;background:none;border:1.5px solid var(--rame);color:var(--rame);border-radius:999px;padding:9px 18px;font:600 14px "Open Sans";cursor:pointer}
-.stampa{background:#fff}
+.conta{font-size:15px;color:var(--grigio);margin:-10px 0 18px}
 .testate{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
-.testata-btn{min-width:0;background:#fff;border:1px solid #e6dccb;border-radius:12px;padding:16px 10px 12px;cursor:pointer;display:flex;flex-direction:column;align-items:center;gap:10px;min-height:120px}
+.testata-btn{min-width:0;background:#fff;border:1px solid var(--linea);border-radius:14px;padding:18px 10px;cursor:pointer;display:flex;align-items:center;justify-content:center;min-height:92px}
 .testata-btn img{width:150px;max-width:100%;max-height:46px;object-fit:contain}
-.testata-btn span{font-size:12.5px;color:var(--grigio)}
-.testata-btn em{font-style:normal;color:var(--rame);font-weight:700;font-size:13px}
 .finale{background:var(--rame-scuro);color:#fff;text-align:center}
-.finale h2{color:#fff}
-.secondari{margin-top:16px;font-size:14px;line-height:2}
-.secondari a{color:#fff;margin:0 7px;display:inline-block}
-.piede{padding:18px 22px;font-size:13px;color:var(--grigio);background:#f3efe8;text-align:center}
+.finale .blocco{padding:60px 22px}
+.finale h2{color:#fff;margin-bottom:24px}
+.telefono{margin:18px 0 0;font-size:15px;color:#f0e2d3}
+.piede{padding:22px;font-size:13px;color:var(--grigio);text-align:center}
 .piede a{color:var(--grigio)}
+.fisso{position:fixed;left:12px;right:12px;bottom:12px;z-index:40;justify-content:center;transform:translateY(140%);transition:transform .25s}
+.fisso.su{transform:none}
 .modale{position:fixed;inset:0;z-index:50;background:rgba(18,12,8,.62);display:flex;align-items:center;justify-content:center;padding:16px}
-.modale[hidden]{display:none}
-.finestra{background:#fff;border-radius:14px;width:min(640px,100%);max-height:88vh;overflow:auto;position:relative;box-shadow:0 20px 60px rgba(0,0,0,.35)}
-.finestra.larga{width:min(900px,100%);height:88vh}
+.finestra{background:#fff;border-radius:16px;width:min(640px,100%);max-height:88vh;overflow:auto;position:relative;box-shadow:0 20px 60px rgba(0,0,0,.35)}
 .chiudi{position:sticky;top:0;float:right;margin:10px 10px 0 0;width:38px;height:38px;border-radius:50%;border:0;background:#f1ebe2;font-size:21px;cursor:pointer;z-index:2}
 .articolo{padding:22px 24px 26px}
 .articolo img{max-height:40px;max-width:190px}
 .articolo .quando{font-size:13px;color:var(--grigio);margin:10px 0 4px}
-.articolo h3{font:700 23px/1.25 "Playfair Display",serif;margin:0 0 14px}
-.articolo blockquote{margin:0 0 12px;padding:0 0 0 14px;border-left:3px solid var(--rame);font:italic 400 17px/1.6 "Playfair Display",serif}
-.finestra iframe{border:0;width:100%;height:calc(88vh - 10px);display:block}
+.articolo h3{font:700 23px/1.25 "Playfair Display",Georgia,serif;margin:0 0 14px}
+.articolo blockquote{margin:0 0 12px;padding:0 0 0 14px;border-left:3px solid var(--rame);font:italic 400 17px/1.6 "Playfair Display",Georgia,serif}
+.articolo a{color:var(--rame)}
 @media (min-width:760px){
- .hero{min-height:600px;padding:44px 52px 48px}.hero h1{font-size:44px}
- .sezione{padding:56px 52px}.due{grid-template-columns:1fr 1fr;align-items:center;gap:36px}
- .fatti{grid-template-columns:repeat(3,1fr)}.schede{grid-template-columns:1fr 1fr}
- .testate{grid-template-columns:repeat(4,minmax(0,1fr))}.galleria{grid-template-columns:repeat(3,1fr)}
+ .testa img{height:92px;width:92px}
+ .hero{min-height:680px}.hero-dentro{padding:56px 52px 60px}.hero h1{font-size:50px}.sotto{font-size:18.5px}
+ .blocco{padding:76px 52px}.blocco h2{font-size:34px}
+ .carte{grid-template-columns:repeat(3,1fr)}
+ .striscia{padding:0 52px;grid-template-columns:2fr 1fr 1fr}.striscia img:first-child{grid-column:auto;aspect-ratio:4/3}
+ .passi{grid-template-columns:repeat(3,1fr);gap:26px}.passi li{flex-direction:column;gap:10px}
+ .recensioni .schede{grid-template-columns:1fr 1fr}.testate{grid-template-columns:repeat(4,minmax(0,1fr))}
+ .fisso{display:none!important}
 }
 </style></head><body>
-<div class="pagina">
- <div class="testata"><img src="../logo-tasteaccio.webp" alt="Taste'accio · Affinature urbane"></div>
- <section class="hero" style="--foto:url('../foto/1660-apertura-grotta-tavolo.webp')" role="img" aria-label="Il tavolo lungo apparecchiato nella grotta, con le forme dietro il vetro">
+<header class="testa"><img src="../logo-tasteaccio.webp" alt="Taste'accio · Affinature urbane"></header>
+<section class="hero" id="apertura" style="--foto:url('../foto/1660-apertura-grotta-tavolo.webp')" role="img" aria-label="Il tavolo lungo apparecchiato nella grotta, con le forme dietro il vetro">
+ <div class="hero-dentro">
   <span class="etichetta">Per agenzie e tour operator</span>
   <h1>A Roma i monumenti si visitano; da noi si mangia dentro un monumento.</h1>
-  <p>Taste&#x27;accio è la prima grotta di affinamento urbano d&#x27;Europa, alla base del Monte dei Cocci, a Testaccio. Vi proponiamo di diventare partner e di farne una tappa dei vostri tour a Roma.</p>
+  <p class="sotto">Taste&#x27;accio è la prima grotta di affinamento urbano d&#x27;Europa, alla base del Monte dei Cocci, a Testaccio. Vi proponiamo di diventare partner e di farne una tappa dei vostri tour a Roma.</p>
   <div><a class="bottone" href="https://wa.me/393895834072?text=Buongiorno%2C%20organizzo%20viaggi%20e%20vorrei%20la%20presentazione%20di%20Taste%27accio%20per%20agenzie%20e%20tour%20operator." target="_blank" rel="noopener"><svg viewBox="0 0 32 32" aria-hidden="true"><path fill="currentColor" d="M16 3C9 3 3.3 8.6 3.3 15.6c0 2.2.6 4.4 1.7 6.3L3 29l7.3-1.9c1.8 1 3.8 1.5 5.7 1.5 7 0 12.7-5.6 12.7-12.6S23 3 16 3zm0 23.1c-1.8 0-3.6-.5-5.2-1.4l-.4-.2-4.3 1.1 1.2-4.2-.3-.4c-1-1.6-1.5-3.5-1.5-5.4 0-5.8 4.7-10.5 10.5-10.5s10.5 4.7 10.5 10.5S21.8 26.1 16 26.1zm5.8-7.9c-.3-.2-1.9-.9-2.2-1-.3-.1-.5-.2-.7.2-.2.3-.8 1-1 1.2-.2.2-.4.2-.7.1-.3-.2-1.3-.5-2.5-1.6-.9-.8-1.6-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.5-.6c.2-.2.2-.3.3-.5.1-.2.1-.4 0-.6l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.2 1.1-1.2 2.8s1.2 3.2 1.4 3.4c.2.2 2.4 3.6 5.7 5 .8.3 1.4.5 1.9.7.8.3 1.5.2 2.1.1.6-.1 1.9-.8 2.1-1.5.3-.7.3-1.4.2-1.5-.1-.2-.3-.3-.6-.4z"/></svg><span>Chiedete la presentazione su WhatsApp</span></a></div>
   <span class="nota">Vi rispondiamo dal 389 583 4072.</span>
- </section>
- <section class="sezione">
-  <div class="due">
-   <img class="foto2" src="../foto/2407-tagliere-calice.webp" alt="Un tagliere con i formaggi affinati in grotta, i salumi e un calice di vino del Lazio">
-   <div><h2>Cosa vivono i vostri clienti</h2><p>Scendono nella grotta e si siedono fra le forme in stagionatura. A tavola raccontiamo da quale paese del Lazio arriva ogni formaggio, ogni salume e ogni vino, e chi lo ha fatto.</p></div>
-  </div>
-  <div class="fatti"><div class="fatto"><b>fino a 32</b>posti a sedere, due turni per i gruppi grandi</div><div class="fatto"><b>italiano e inglese</b>le lingue della degustazione</div><div class="fatto"><b>via di Monte Testaccio 91/93</b>Testaccio, Roma</div></div>
- </section>
- <section class="sezione settore">
-  <h2>Come lavoriamo con voi</h2>
-  <div class="voce"><h3>Il fam trip</h3><p>Prima di proporci ai vostri clienti, venite a provare la degustazione in grotta: la offriamo noi, su appuntamento. Il viaggio resta a carico vostro.</p><a class="bottone chiaro" href="https://wa.me/393895834072?text=Buongiorno%2C%20organizzo%20viaggi%20e%20vorrei%20fissare%20un%20fam%20trip%20a%20Taste%27accio." target="_blank" rel="noopener"><svg viewBox="0 0 32 32" aria-hidden="true"><path fill="currentColor" d="M16 3C9 3 3.3 8.6 3.3 15.6c0 2.2.6 4.4 1.7 6.3L3 29l7.3-1.9c1.8 1 3.8 1.5 5.7 1.5 7 0 12.7-5.6 12.7-12.6S23 3 16 3zm0 23.1c-1.8 0-3.6-.5-5.2-1.4l-.4-.2-4.3 1.1 1.2-4.2-.3-.4c-1-1.6-1.5-3.5-1.5-5.4 0-5.8 4.7-10.5 10.5-10.5s10.5 4.7 10.5 10.5S21.8 26.1 16 26.1zm5.8-7.9c-.3-.2-1.9-.9-2.2-1-.3-.1-.5-.2-.7.2-.2.3-.8 1-1 1.2-.2.2-.4.2-.7.1-.3-.2-1.3-.5-2.5-1.6-.9-.8-1.6-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.5-.6c.2-.2.2-.3.3-.5.1-.2.1-.4 0-.6l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.2 1.1-1.2 2.8s1.2 3.2 1.4 3.4c.2.2 2.4 3.6 5.7 5 .8.3 1.4.5 1.9.7.8.3 1.5.2 2.1.1.6-.1 1.9-.8 2.1-1.5.3-.7.3-1.4.2-1.5-.1-.2-.3-.3-.6-.4z"/></svg><span>Fissate il fam trip</span></a></div><div class="voce"><h3>Condizioni e disponibilità</h3><p>Ve le mandiamo su WhatsApp con la presentazione, e le date le decidiamo insieme.</p></div>
-  
- </section>
- <section class="sezione recensioni">
-  <h2>Chi ci è stato</h2>
-  <p class="conta" id="conta">Le recensioni lasciate su Google, Airbnb, GetYourGuide e Tripadvisor, con le loro parole.</p>
-  <div class="schede"><div class="scheda"><div class="stelle">★★★★★</div><p>Ho degustato salumi e formaggi davvero unici, coccolata dal personale davvero molto gentile, un&#x27;esperienza immersiva in un sito archeologico che vale davvero la pena visitare. Ho apprezzato anche i cocci romani a vista e le opere d&#x27;arte contemporanea sparse nella grotta. Esperienza super consigliata!</p><div class="chi">Antonella · GetYourGuide · marzo 2025</div></div><div class="scheda"><div class="stelle">★★★★★</div><p>Un’esperienza stupenda sui formaggi con un host d’eccezione. Vincenzo è preparatissimo sul mondo dei formaggi, sulla produzione e sulla loro storia. Questo ci ha permesso non solo di imparare a preparare un tagliere, ma anche di scoprire molto di più su questo affascinante mondo. Location anch’essa unica: una grotta all’interno del Monte dei Cocci, curata e allestita con grande attenzione. Super consigliato</p><div class="chi">Margherita · Airbnb · maggio 2026</div></div><div class="scheda"><div class="stelle">★★★★★</div><p>Varrebbe la pena di prenotare questa esperienza, anche solo per vedere la location. Si entra in una grotta che confina con il monte dei cocci in un’atmosfera incredibile circondati da formaggi ed opere d’arte. Abbiamo preparato un tagliere con dei formaggi incredibili unici accompagnati da un buonissimo vino con un Host d’eccezione che ci ha spiegato tutto circa formaggi taglieri, come tagliare come gustare, insomma un’esperienza davvero meravigliosa.</p><div class="chi">Debora · Airbnb · maggio 2026</div></div><div class="scheda"><div class="stelle">★★★★★</div><p>Our host was very informative. He spoke in Italian and had an interpreter. We learned a great deal about how to present cheese on a cheese board and in which order to taste the cheeses. We both loved the experience. Thank you</p><div class="chi">Denise · Airbnb · settembre 2026</div></div></div>
-  <button class="leggi" id="tutte">Leggi tutte le recensioni</button>
- </section>
- <section class="sezione stampa">
-  <h2>Chi ne ha scritto</h2>
-  <div class="testate"><button class="testata-btn" data-i="0"><img src="../stampa/logo-gambero-rosso.png" alt="Gambero Rosso"><span>16 settembre 2024</span><em>leggi l'articolo</em></button><button class="testata-btn" data-i="1"><img src="../stampa/logo-identita-golose.svg" alt="Identità Golose"><span>28 ottobre 2024</span><em>leggi l'articolo</em></button><button class="testata-btn" data-i="2"><img src="../stampa/logo-repubblica.svg" alt="Il Gusto · la Repubblica"><span>4 ottobre 2024</span><em>leggi l'articolo</em></button><button class="testata-btn" data-i="3"><img src="../stampa/logo-food-wine-italia.jpg" alt="Food &amp; Wine Italia"><span>3 ottobre 2024</span><em>leggi l'articolo</em></button></div>
- </section>
- <section class="sezione finale">
-  <h2>Portate i vostri gruppi a tavola fra le forme</h2>
-  <a class="bottone" href="https://wa.me/393895834072?text=Buongiorno%2C%20organizzo%20viaggi%20e%20vorrei%20la%20presentazione%20di%20Taste%27accio%20per%20agenzie%20e%20tour%20operator." target="_blank" rel="noopener"><svg viewBox="0 0 32 32" aria-hidden="true"><path fill="currentColor" d="M16 3C9 3 3.3 8.6 3.3 15.6c0 2.2.6 4.4 1.7 6.3L3 29l7.3-1.9c1.8 1 3.8 1.5 5.7 1.5 7 0 12.7-5.6 12.7-12.6S23 3 16 3zm0 23.1c-1.8 0-3.6-.5-5.2-1.4l-.4-.2-4.3 1.1 1.2-4.2-.3-.4c-1-1.6-1.5-3.5-1.5-5.4 0-5.8 4.7-10.5 10.5-10.5s10.5 4.7 10.5 10.5S21.8 26.1 16 26.1zm5.8-7.9c-.3-.2-1.9-.9-2.2-1-.3-.1-.5-.2-.7.2-.2.3-.8 1-1 1.2-.2.2-.4.2-.7.1-.3-.2-1.3-.5-2.5-1.6-.9-.8-1.6-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.5-.6c.2-.2.2-.3.3-.5.1-.2.1-.4 0-.6l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.2 1.1-1.2 2.8s1.2 3.2 1.4 3.4c.2.2 2.4 3.6 5.7 5 .8.3 1.4.5 1.9.7.8.3 1.5.2 2.1.1.6-.1 1.9-.8 2.1-1.5.3-.7.3-1.4.2-1.5-.1-.2-.3-.3-.6-.4z"/></svg><span>Chiedete la presentazione su WhatsApp</span></a>
-  <div class="secondari">oppure chiamate Alessia al 389 583 4072 · <a href="https://share.google/2ao8mqn3AnORLuq2T" target="_blank" rel="noopener">la nostra scheda Google</a>
-   · <a href="https://www.instagram.com/tasteaccio_/" target="_blank" rel="noopener">Instagram</a></div>
- </section>
- <div class="piede">Taste'accio · Via di Monte Testaccio 91/93, 00153 Roma · Copyright © 2026 DOL srl ·
-  <a href="https://www.tasteaccio.it/privacy-policy/">Privacy Policy</a></div>
-</div>
-<div class="modale" id="modale" hidden><div class="finestra" id="finestra"><button class="chiudi" id="chiudi" aria-label="Chiudi">×</button><div id="dentro"></div></div></div>
+ </div>
+</section>
+<section class="blocco"><h2>Cosa vivono i vostri clienti</h2><div class="carte"><div class="carta"><h3>Dentro il Monte dei Cocci</h3><p>Scendono nella grotta, alla base del colle fatto di frammenti di anfore romane, e si siedono fra le forme in stagionatura.</p></div><div class="carta"><h3>Il Lazio, paese per paese</h3><p>A tavola raccontiamo da quale paese arriva ogni formaggio, ogni salume e ogni vino, e chi lo ha fatto.</p></div><div class="carta"><h3>Gruppi, anche grandi</h3><p>A tavola fino a trentadue persone, e con i gruppi più numerosi facciamo due turni. Il racconto è in italiano o in inglese.</p></div></div></section>
+<div class="striscia"><img src="../foto/2407-tagliere-calice.webp" alt="Un tagliere con i formaggi affinati in grotta, i salumi e un calice di vino del Lazio" loading="lazy"><img src="../foto/2276-corridoio-forme.webp" alt="Il corridoio della grotta con le forme in affinamento" loading="lazy"><img src="../foto/2337-tavolo-cantina.webp" alt="Il tavolo nella grotta, accanto alla cantina delle forme" loading="lazy"></div>
+<section class="blocco"><h2>Come lavoriamo con voi</h2><ol class="passi"><li><span class="num">1</span><div><h3>Chiedete la presentazione</h3><p>Su WhatsApp vi mandiamo la presentazione con condizioni e disponibilità.</p></div></li><li><span class="num">2</span><div><h3>Venite al fam trip</h3><p>Provate la degustazione in grotta prima di proporla ai vostri clienti: la offriamo noi, su appuntamento. Il viaggio resta a carico vostro.</p></div></li><li><span class="num">3</span><div><h3>Inseriteci nei programmi</h3><p>Le date le decidiamo insieme, gruppo per gruppo.</p></div></li></ol><a class="bottone chiaro" href="https://wa.me/393895834072?text=Buongiorno%2C%20organizzo%20viaggi%20e%20vorrei%20fissare%20un%20fam%20trip%20a%20Taste%27accio." target="_blank" rel="noopener"><svg viewBox="0 0 32 32" aria-hidden="true"><path fill="currentColor" d="M16 3C9 3 3.3 8.6 3.3 15.6c0 2.2.6 4.4 1.7 6.3L3 29l7.3-1.9c1.8 1 3.8 1.5 5.7 1.5 7 0 12.7-5.6 12.7-12.6S23 3 16 3zm0 23.1c-1.8 0-3.6-.5-5.2-1.4l-.4-.2-4.3 1.1 1.2-4.2-.3-.4c-1-1.6-1.5-3.5-1.5-5.4 0-5.8 4.7-10.5 10.5-10.5s10.5 4.7 10.5 10.5S21.8 26.1 16 26.1zm5.8-7.9c-.3-.2-1.9-.9-2.2-1-.3-.1-.5-.2-.7.2-.2.3-.8 1-1 1.2-.2.2-.4.2-.7.1-.3-.2-1.3-.5-2.5-1.6-.9-.8-1.6-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.5-.6c.2-.2.2-.3.3-.5.1-.2.1-.4 0-.6l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.2 1.1-1.2 2.8s1.2 3.2 1.4 3.4c.2.2 2.4 3.6 5.7 5 .8.3 1.4.5 1.9.7.8.3 1.5.2 2.1.1.6-.1 1.9-.8 2.1-1.5.3-.7.3-1.4.2-1.5-.1-.2-.3-.3-.6-.4z"/></svg><span>Fissate il fam trip</span></a></section>
+<div class="fondo-bianco"><section class="blocco recensioni"><h2>Chi ci è stato</h2>
+ <p class="conta" id="conta">Le recensioni lasciate su Google, Airbnb, GetYourGuide e Tripadvisor, con le loro parole.</p>
+ <div class="schede"><div class="scheda"><div class="stelle">★★★★★</div><p>Ho degustato salumi e formaggi davvero unici, coccolata dal personale davvero molto gentile, un&#x27;esperienza immersiva in un sito archeologico che vale davvero la pena visitare. Ho apprezzato anche i cocci romani a vista e le opere d&#x27;arte contemporanea sparse nella grotta. Esperienza super consigliata!</p><div class="chi">Antonella · GetYourGuide · marzo 2025</div></div><div class="scheda"><div class="stelle">★★★★★</div><p>Un’esperienza stupenda sui formaggi con un host d’eccezione. Vincenzo è preparatissimo sul mondo dei formaggi, sulla produzione e sulla loro storia. Questo ci ha permesso non solo di imparare a preparare un tagliere, ma anche di scoprire molto di più su questo affascinante mondo. Location anch’essa unica: una grotta all’interno del Monte dei Cocci, curata e allestita con grande attenzione. Super consigliato</p><div class="chi">Margherita · Airbnb · maggio 2026</div></div><div class="scheda"><div class="stelle">★★★★★</div><p>Varrebbe la pena di prenotare questa esperienza, anche solo per vedere la location. Si entra in una grotta che confina con il monte dei cocci in un’atmosfera incredibile circondati da formaggi ed opere d’arte. Abbiamo preparato un tagliere con dei formaggi incredibili unici accompagnati da un buonissimo vino con un Host d’eccezione che ci ha spiegato tutto circa formaggi taglieri, come tagliare come gustare, insomma un’esperienza davvero meravigliosa.</p><div class="chi">Debora · Airbnb · maggio 2026</div></div><div class="scheda"><div class="stelle">★★★★★</div><p>Our host was very informative. He spoke in Italian and had an interpreter. We learned a great deal about how to present cheese on a cheese board and in which order to taste the cheeses. We both loved the experience. Thank you</p><div class="chi">Denise · Airbnb · settembre 2026</div></div></div></section></div>
+<section class="blocco stampa"><h2>Chi ne ha scritto</h2><div class="testate"><button class="testata-btn" type="button" data-i="0" aria-label="Leggi l'articolo di Gambero Rosso"><img src="../stampa/logo-gambero-rosso.png" alt="Gambero Rosso"></button><button class="testata-btn" type="button" data-i="1" aria-label="Leggi l'articolo di Identità Golose"><img src="../stampa/logo-identita-golose.svg" alt="Identità Golose"></button><button class="testata-btn" type="button" data-i="2" aria-label="Leggi l'articolo di Il Gusto · la Repubblica"><img src="../stampa/logo-repubblica.svg" alt="Il Gusto · la Repubblica"></button><button class="testata-btn" type="button" data-i="3" aria-label="Leggi l'articolo di Food &amp; Wine Italia"><img src="../stampa/logo-food-wine-italia.jpg" alt="Food &amp; Wine Italia"></button></div>
+ <p class="piccolo">Un tocco sul logo apre l'articolo.</p></section>
+<section class="finale" id="finale"><div class="blocco">
+ <h2>Portate i vostri gruppi a tavola fra le forme</h2>
+ <a class="bottone" href="https://wa.me/393895834072?text=Buongiorno%2C%20organizzo%20viaggi%20e%20vorrei%20la%20presentazione%20di%20Taste%27accio%20per%20agenzie%20e%20tour%20operator." target="_blank" rel="noopener"><svg viewBox="0 0 32 32" aria-hidden="true"><path fill="currentColor" d="M16 3C9 3 3.3 8.6 3.3 15.6c0 2.2.6 4.4 1.7 6.3L3 29l7.3-1.9c1.8 1 3.8 1.5 5.7 1.5 7 0 12.7-5.6 12.7-12.6S23 3 16 3zm0 23.1c-1.8 0-3.6-.5-5.2-1.4l-.4-.2-4.3 1.1 1.2-4.2-.3-.4c-1-1.6-1.5-3.5-1.5-5.4 0-5.8 4.7-10.5 10.5-10.5s10.5 4.7 10.5 10.5S21.8 26.1 16 26.1zm5.8-7.9c-.3-.2-1.9-.9-2.2-1-.3-.1-.5-.2-.7.2-.2.3-.8 1-1 1.2-.2.2-.4.2-.7.1-.3-.2-1.3-.5-2.5-1.6-.9-.8-1.6-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.5-.6c.2-.2.2-.3.3-.5.1-.2.1-.4 0-.6l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.2 1.1-1.2 2.8s1.2 3.2 1.4 3.4c.2.2 2.4 3.6 5.7 5 .8.3 1.4.5 1.9.7.8.3 1.5.2 2.1.1.6-.1 1.9-.8 2.1-1.5.3-.7.3-1.4.2-1.5-.1-.2-.3-.3-.6-.4z"/></svg><span>Chiedete la presentazione su WhatsApp</span></a>
+ <p class="telefono">oppure chiamate Alessia al 389 583 4072</p>
+</div></section>
+<footer class="piede">Taste'accio · Via di Monte Testaccio 91/93, 00153 Roma · © 2026 DOL srl · <a href="https://www.tasteaccio.it/privacy-policy/">Privacy</a></footer>
+<a class="bottone fisso" href="https://wa.me/393895834072?text=Buongiorno%2C%20organizzo%20viaggi%20e%20vorrei%20la%20presentazione%20di%20Taste%27accio%20per%20agenzie%20e%20tour%20operator." target="_blank" rel="noopener"><svg viewBox="0 0 32 32" aria-hidden="true"><path fill="currentColor" d="M16 3C9 3 3.3 8.6 3.3 15.6c0 2.2.6 4.4 1.7 6.3L3 29l7.3-1.9c1.8 1 3.8 1.5 5.7 1.5 7 0 12.7-5.6 12.7-12.6S23 3 16 3zm0 23.1c-1.8 0-3.6-.5-5.2-1.4l-.4-.2-4.3 1.1 1.2-4.2-.3-.4c-1-1.6-1.5-3.5-1.5-5.4 0-5.8 4.7-10.5 10.5-10.5s10.5 4.7 10.5 10.5S21.8 26.1 16 26.1zm5.8-7.9c-.3-.2-1.9-.9-2.2-1-.3-.1-.5-.2-.7.2-.2.3-.8 1-1 1.2-.2.2-.4.2-.7.1-.3-.2-1.3-.5-2.5-1.6-.9-.8-1.6-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.5-.6c.2-.2.2-.3.3-.5.1-.2.1-.4 0-.6l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.2 1.1-1.2 2.8s1.2 3.2 1.4 3.4c.2.2 2.4 3.6 5.7 5 .8.3 1.4.5 1.9.7.8.3 1.5.2 2.1.1.6-.1 1.9-.8 2.1-1.5.3-.7.3-1.4.2-1.5-.1-.2-.3-.3-.6-.4z"/></svg><span>Scriveteci su WhatsApp</span></a>
+<div class="modale" id="modale" hidden><div class="finestra"><button class="chiudi" id="chiudi" aria-label="Chiudi">×</button><div id="dentro"></div></div></div>
 <script>
 const STAMPA = [{"logo": "../stampa/logo-gambero-rosso.png", "testata": "Gambero Rosso", "quando": "16 settembre 2024 · Stefano Polacchi", "titolo": "A Roma la prima grotta urbana di affinamento per formaggi e salumi del Lazio è scavata nel monte di Testaccio", "passi": ["Un antro scavato nel Monte dei Cocci a Testaccio che quando ci sei davanti (e noi l’abbiamo trovato solo per caso, facendo una passeggiata distensiva) ti dà l’impressione di entrare nella caverna di Platone o nella fucina di Efesto, con le forme (di pecorini, conciati, guanciali e prosciutti) che passo dopo passo prendono definizione e ammaliano la vista e l’immaginario.", "Una sorta di iperuranio lattico fatto di forme, appunto, e di profumi: il luogo dove l’idea stessa del cibo umano prende consistenza e si definisce."], "url": "https://www.gamberorosso.it/ristoranti/roma-grotta-affinamento-formaggi-salumi/", "sito": "gamberorosso.it"}, {"logo": "../stampa/logo-identita-golose.svg", "testata": "Identità Golose", "quando": "28 ottobre 2024 · Giusy Ferraina", "titolo": "A Roma, nella grotta urbana per l'affinamento dei formaggi che presenta chicche incredibili", "passi": ["Capita, in un pomeriggio di ottobre, di ritrovarsi in una delle grotte di Testaccio a Roma, quelle proprio sotto il Monte dei Cocci, trasformate in un caveau dedicato alle eccellenze enogastronomiche laziali, alla cultura e all’arte.", "Taste’accio, dunque, più che un progetto innovativo, potrebbe essere definito un ritorno all’essenza e alle connessioni vere."], "url": "https://www.identitagolose.it/sito/it/44/37531/dallitalia/a-roma-nella-grotta-urbana-per-laffinamento-dei-formaggi-che-presenta-chicche-incredibili.html", "sito": "identitagolose.it"}, {"logo": "../stampa/logo-repubblica.svg", "testata": "Il Gusto · la Repubblica", "quando": "4 ottobre 2024 · Giulia Mancini", "titolo": "Volete provare qualcosa di nuovo a Roma? Ecco 14 nuovi ristoranti da scoprire", "passi": ["Selezionatore di golosità, specializzato in salumi e formaggi, Mancino ha riunito in una delle grotte del Monte dei Cocci estetica, etica e bontà. Ideali le condizioni delle grotte per affinamenti e stagionature, scaffali in cui risposano formaggi e ganci da cui pendono salumi e guanciali, tra di loro opere d’arte e cicliche mostre fotografiche.", "Si può scegliere di comperare e portar via come di fermarsi ai tavoli sociali per lasciarsi guidare alla scoperta dei sapori e della selezione di bottiglie."], "url": "https://www.repubblica.it/il-gusto/2024/10/04/news/ristoranti_roma_14_nuove_aperture_ottobre-423534787/", "sito": "repubblica.it"}, {"logo": "../stampa/logo-food-wine-italia.jpg", "testata": "Food & Wine Italia", "quando": "3 ottobre 2024 · Redazione", "titolo": "Taste’accio: a Roma la prima grotta urbana d’Europa per l’affinamento di salumi e formaggi", "passi": ["Le grotte degli antichi magazzini del Monte dei Cocci, sono state trasformate in un visionario contenitore di eccellenze gastronomiche laziali e opere d’arte contemporanea.", "Una sorta di naturale caveau gastronomico, dunque, dove affinare e conservare prodotti della tradizione laziale […]."], "url": "https://www.foodandwineitalia.com/tasteaccio-a-roma-la-prima-grotta-urbana-deuropa-per-laffinamento-di-salumi-e-formaggi/", "sito": "foodandwineitalia.com"}];
 const esc = t => String(t).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"})[c]);
-const M = document.getElementById("modale"), F = document.getElementById("finestra"), D = document.getElementById("dentro");
-function apri(h, larga){ D.innerHTML = h; F.classList.toggle("larga", !!larga); M.hidden = false; document.body.style.overflow = "hidden"; }
+const M = document.getElementById("modale"), D = document.getElementById("dentro");
+function apri(h){ D.innerHTML = h; M.hidden = false; document.body.style.overflow = "hidden"; }
 function chiudi(){ M.hidden = true; D.innerHTML = ""; document.body.style.overflow = ""; }
 document.getElementById("chiudi").onclick = chiudi;
 M.addEventListener("click", ev => { if (ev.target === M) chiudi(); });
@@ -150,13 +141,47 @@ document.querySelectorAll(".testata-btn").forEach(b => b.onclick = () => {
   const a = STAMPA[+b.dataset.i];
   apri(`<div class="articolo"><img src="${a.logo}" alt="${esc(a.testata)}"><div class="quando">${esc(a.testata)} · ${esc(a.quando)}</div>
     <h3>${esc(a.titolo)}</h3>${a.passi.map(p => `<blockquote>«${esc(p)}»</blockquote>`).join("")}
-    <a href="${a.url}" target="_blank" rel="noopener">leggi l'originale su ${esc(a.sito)} ↗</a></div>`);
+    <a href="${a.url}" target="_blank" rel="noopener">l'articolo completo su ${esc(a.sito)} ↗</a></div>`);
 });
-document.getElementById("tutte").onclick = () => apri(`<iframe src="https://www.tasteaccio.it/recensioni/" title="Tutte le recensioni"></iframe>`, true);
-document.querySelectorAll(".copia").forEach(b => b.onclick = async () => {
-  try { await navigator.clipboard.writeText(b.dataset.testo); const t = b.textContent; b.textContent = "copiato"; b.classList.add("fatto-ok");
-        setTimeout(() => { b.textContent = t; b.classList.remove("fatto-ok"); }, 1800); } catch (err) {}
-});
+// il pulsante fisso del telefono compare dopo la foto d'apertura e sparisce sulla chiusura, che ha già il suo
+const fisso = document.querySelector(".bottone.fisso"), visti = {};
+if ("IntersectionObserver" in window) {
+  const oss = new IntersectionObserver(voci => {
+    voci.forEach(v => visti[v.target.id] = v.isIntersecting);
+    fisso.classList.toggle("su", !visti.apertura && !visti.finale);
+  });
+  ["apertura", "finale"].forEach(id => oss.observe(document.getElementById(id)));
+}
+// eventi: occasione e formato si scelgono qui, e il pulsante porta il messaggio con la scelta
+if (typeof SCELTA !== "undefined") {
+  const agg = () => {
+    const val = g => document.querySelector('.chip[data-gruppo="' + g + '"][aria-pressed="true"]').textContent;
+    document.getElementById("proposta").href = "https://wa.me/" + SCELTA.wa + "?text=" +
+      encodeURIComponent(SCELTA.testo.replace("{occasione}", val("occasione")).replace("{formato}", val("formato")));
+  };
+  document.querySelectorAll(".chip[data-gruppo]").forEach(c => c.onclick = () => {
+    document.querySelectorAll('.chip[data-gruppo="' + c.dataset.gruppo + '"]').forEach(x => x.setAttribute("aria-pressed", x === c ? "true" : "false"));
+    agg();
+  });
+  agg();
+}
+// chi ospita: il messaggio si legge senza indirizzi in vista, e si copia intero, con i link
+if (typeof KIT !== "undefined") {
+  let lingua = Object.keys(KIT)[0];
+  const bolla = document.getElementById("bolla");
+  const mostra = () => {
+    bolla.innerHTML = esc(KIT[lingua]).replace(/https?:\/\/\S+/g, '<span class="link">link Airbnb</span>');
+    document.querySelectorAll(".chip[data-lingua]").forEach(x => x.setAttribute("aria-pressed", x.dataset.lingua === lingua ? "true" : "false"));
+  };
+  document.querySelectorAll(".chip[data-lingua]").forEach(c => c.onclick = () => { lingua = c.dataset.lingua; mostra(); });
+  document.getElementById("copia-kit").onclick = async ev => {
+    const b = ev.currentTarget;
+    try { await navigator.clipboard.writeText(KIT[lingua]); b.textContent = "Messaggio copiato"; }
+    catch (err) { b.textContent = "Tenga premuto sul testo per copiarlo"; }
+    setTimeout(() => b.textContent = "Copia il messaggio", 2200);
+  };
+  mostra();
+}
 // il numero delle recensioni si legge dalla pagina viva (stesso sito): cresce ogni notte, qui non si scrive a mano
 fetch("/recensioni/").then(r => r.ok ? r.text() : "").then(t => {
   const m = t.match(/(\d+) recensioni, dalla più recente/);
