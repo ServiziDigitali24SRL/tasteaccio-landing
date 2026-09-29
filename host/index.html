@@ -29,6 +29,16 @@ img{display:block;max-width:100%}
 .etichetta{display:inline-block;font-size:12.5px;letter-spacing:1.2px;text-transform:uppercase;font-weight:700;color:var(--rame);margin-bottom:12px}
 .copy h1{font:700 34px/1.16 "Playfair Display",Georgia,serif;margin:0 0 18px}
 .copy p{margin:0 0 12px;font-size:17.5px;color:#3b3632}
+.sezioni{max-width:720px;margin:0 auto;padding:0 0 26px}
+.sezioni h2{font:700 25px/1.25 "Playfair Display",Georgia,serif;margin:30px 0 12px;color:var(--rame-scuro)}
+.sezioni p{margin:0 0 12px;font-size:17px;color:#3b3632}
+.esperienze{display:grid;grid-template-columns:1fr;gap:12px;margin:4px 0 0}
+.esperienza{background:#fff;border:1px solid var(--linea);border-radius:14px;padding:16px 18px}
+.esperienza h3{font:700 19px/1.3 "Playfair Display",Georgia,serif;margin:0 0 6px;color:var(--rame)}
+.esperienza p{margin:0;font-size:16px}
+.elenco{list-style:none;margin:0;padding:0}
+.elenco li{position:relative;padding:0 0 10px 22px;font-size:17px;color:#3b3632}
+.elenco li:before{content:"";position:absolute;left:4px;top:.62em;width:8px;height:8px;border-radius:50%;background:var(--rame)}
 .foto{display:grid;grid-template-columns:1fr;gap:12px;margin:6px 0 10px}
 .foto img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:16px}
 .blocco{padding:44px 0 8px}
@@ -60,6 +70,7 @@ img{display:block;max-width:100%}
 @media (min-width:760px){
  .testa img{height:96px;width:96px}
  .copy{padding:30px 0 40px}.copy h1{font-size:46px}.copy p{font-size:18.5px}
+ .esperienze{grid-template-columns:1fr 1fr}.sezioni h2{font-size:28px}
  .foto{grid-template-columns:1.4fr 1fr}.foto img{height:100%;aspect-ratio:auto;min-height:340px}
  .blocco{padding:64px 0 8px}.blocco h2{font-size:34px}
  .schede{grid-template-columns:1fr 1fr}.testate{grid-template-columns:repeat(4,minmax(0,1fr))}
@@ -73,6 +84,7 @@ img{display:block;max-width:100%}
   <h1>Regali ai suoi ospiti 25 dollari e ne riceva 15 per ogni prenotazione</h1>
   <p>Con il referral di Airbnb, consigliare Taste&#x27;accio non le costa niente: il buono e i 15 dollari li paga Airbnb.</p><p>Siamo la prima grotta di affinamento urbano d&#x27;Europa, alla base del Monte dei Cocci: le persone che ci manda si siedono fra le forme di formaggio e mangiano dentro un monumento.</p>
  </section>
+ <section class="sezioni"><h2>Chi siamo</h2><p>Taste&#x27;accio è nato nel 2024 in una grotta scavata alla base del Monte dei Cocci, a Testaccio: il colle artificiale fatto di milioni di frammenti di anfore romane, che portavano a Roma olio e altri alimenti. Nei secoli le grotte del colle sono diventate magazzini e cantine.</p><p>Nella nostra affiniamo i formaggi dei piccoli produttori del Lazio: stanno sugli scaffali, fra le pareti coperte di muffe spontanee che lavorano sulle croste e arrivano fino al cuore delle forme.</p><h2>Cosa facciamo</h2><p>A tavola, fra le forme, facciamo assaggiare formaggi, salumi, vini e oli dei piccoli produttori del Lazio, e di ogni prodotto raccontiamo da quale paese arriva e chi lo fa. Il racconto è in italiano o in inglese.</p><p>La grotta ospita anche eventi privati, incontri con i produttori e mostre di artisti contemporanei. Nella bottega i prodotti si possono comprare.</p><h2>Le tre esperienze su Airbnb</h2><div class="esperienze"><div class="esperienza"><h3>Il tagliere di formaggi</h3><p>Si impara a comporre un tagliere con i formaggi affinati in grotta e i salumi dei piccoli produttori del Lazio, e poi lo si assaggia.</p></div><div class="esperienza"><h3>I vini del Lazio</h3><p>Quattro vini della regione, ognuno con il suo formaggio, dalla bollicina biologica al rosso strutturato.</p></div><div class="esperienza"><h3>L&#x27;olio DOP</h3><p>Quattro oli DOP del Lazio con il pane a lievitazione naturale, e un calice di Frascati Superiore DOCG per chiudere.</p></div></div><h2>Come funziona il referral</h2><ul class="elenco"><li>Consiglia le nostre esperienze dalla chat di Airbnb: chi prenota dal suo link riceve un buono da 25 dollari, lei 15 dollari per ogni prenotazione. Li paga Airbnb.</li><li>Su WhatsApp le mandiamo i tre link e il testo pronto per i suoi ospiti, in italiano e in inglese.</li><li>Il racconto è in italiano o in inglese, e la grotta è accessibile a chi ha difficoltà motorie.</li><li>Prima di consigliarla, venga a vedere la grotta: su appuntamento, senza assaggio.</li></ul></section>
  <section class="foto"><img src="../foto/1660-apertura-grotta-tavolo.webp" alt="Il tavolo lungo apparecchiato nella grotta, con le forme dietro il vetro"><img src="../foto/2407-tagliere-calice.webp" alt="Un tagliere con i formaggi affinati in grotta, i salumi e un calice di vino del Lazio" loading="lazy"></section>
  <section class="blocco">
   <h2>Chi ci è stato</h2>
